@@ -1,0 +1,1 @@
+export function AuroraBackground(){return <div className="aurora-scene" aria-hidden="true"><div className="aurora-orb orb-one"/><div className="aurora-orb orb-two"/><div className="aurora-orb orb-three"/><div className="aurora-grid"/></div>}

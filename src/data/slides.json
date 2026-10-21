@@ -1,0 +1,236 @@
+[
+  {
+    "id": "slide-02",
+    "title": "ND-Array-Numpy-add-mindmap",
+    "file": "/slides/slide-02.pdf",
+    "pages": 33,
+    "topic": "numpy",
+    "type": "Tài liệu bổ sung",
+    "originalName": "ND-Array-Numpy-add-mindmap.pdf"
+  },
+  {
+    "id": "slide-03",
+    "title": "w01-c01 gioi-thieu",
+    "file": "/slides/slide-03.pdf",
+    "pages": 24,
+    "topic": "intro",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w01-c01_gioi-thieu (done).pdf"
+  },
+  {
+    "id": "slide-04",
+    "title": "w02.1-c02 cac-khai-niem-co-ban",
+    "file": "/slides/slide-04.pdf",
+    "pages": 30,
+    "topic": "basics",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w02.1-c02_cac-khai-niem-co-ban (done).pdf"
+  },
+  {
+    "id": "slide-05",
+    "title": "w02.1-c02 cac-khai-niem-co-ban HW (choSV)",
+    "file": "/slides/slide-05.pdf",
+    "pages": 11,
+    "topic": "basics",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w02.1-c02_cac-khai-niem-co-ban_HW (choSV).pdf"
+  },
+  {
+    "id": "slide-06",
+    "title": "w02.2-c02 kieu-du-lieu cau-truc-re-nhanh",
+    "file": "/slides/slide-06.pdf",
+    "pages": 19,
+    "topic": "control",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w02.2-c02_kieu-du-lieu_cau-truc-re-nhanh (done).pdf"
+  },
+  {
+    "id": "slide-07",
+    "title": "w02.2-c02 kieu-du-lieu cau-truc-re-nhanh HW",
+    "file": "/slides/slide-07.pdf",
+    "pages": 14,
+    "topic": "control",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w02.2-c02_kieu-du-lieu_cau-truc-re-nhanh_HW (done).pdf"
+  },
+  {
+    "id": "slide-08",
+    "title": "w02.3-c02 cau-truc-lap",
+    "file": "/slides/slide-08.pdf",
+    "pages": 18,
+    "topic": "control",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w02.3-c02_cau-truc-lap (done).pdf"
+  },
+  {
+    "id": "slide-09",
+    "title": "w02.3-c02 cau-truc-lap HW",
+    "file": "/slides/slide-09.pdf",
+    "pages": 19,
+    "topic": "control",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w02.3-c02_cau-truc-lap_HW (done).pdf"
+  },
+  {
+    "id": "slide-10",
+    "title": "w03-c03 cac-kieu-du-lieu-phuc-hop list",
+    "file": "/slides/slide-10.pdf",
+    "pages": 24,
+    "topic": "collections",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w03-c03_cac-kieu-du-lieu-phuc-hop_list (done).pdf"
+  },
+  {
+    "id": "slide-11",
+    "title": "w03-c03 cac-kieu-du-lieu-phuc-hop list HW -sv",
+    "file": "/slides/slide-11.pdf",
+    "pages": 11,
+    "topic": "collections",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w03-c03_cac-kieu-du-lieu-phuc-hop_list_HW (done)-sv.pdf"
+  },
+  {
+    "id": "slide-12",
+    "title": "w04.1-c03 cac-kieu-du-lieu-phuc-hop tuple set dictionary",
+    "file": "/slides/slide-12.pdf",
+    "pages": 28,
+    "topic": "collections",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w04.1-c03_cac-kieu-du-lieu-phuc-hop_tuple_set_dictionary (done).pdf"
+  },
+  {
+    "id": "slide-13",
+    "title": "w04.1-c03 cac-kieu-du-lieu-phuc-hop tuple set dictionary HW (-sv-)",
+    "file": "/slides/slide-13.pdf",
+    "pages": 14,
+    "topic": "collections",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w04.1-c03_cac-kieu-du-lieu-phuc-hop_tuple_set_dictionary_HW (-sv-).pdf"
+  },
+  {
+    "id": "slide-14",
+    "title": "w05-c04 ham",
+    "file": "/slides/slide-14.pdf",
+    "pages": 35,
+    "topic": "functions",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w05-c04_ham (done).pdf"
+  },
+  {
+    "id": "slide-15",
+    "title": "w05-c04 ham HW-sv",
+    "file": "/slides/slide-15.pdf",
+    "pages": 18,
+    "topic": "functions",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w05-c04_ham_HW-sv (done).pdf"
+  },
+  {
+    "id": "slide-16",
+    "title": "w06-c04 xu-ly-chuoi",
+    "file": "/slides/slide-16.pdf",
+    "pages": 16,
+    "topic": "strings",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w06-c04_xu-ly-chuoi (done).pdf"
+  },
+  {
+    "id": "slide-17",
+    "title": "w06-c04 xu-ly-chuoi HW",
+    "file": "/slides/slide-17.pdf",
+    "pages": 13,
+    "topic": "strings",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w06-c04_xu-ly-chuoi_HW (done).pdf"
+  },
+  {
+    "id": "slide-18",
+    "title": "w07-c05 su-dung-modules-library-trong-python",
+    "file": "/slides/slide-18.pdf",
+    "pages": 15,
+    "topic": "modules",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w07-c05_su-dung-modules-library-trong-python (done).pdf"
+  },
+  {
+    "id": "slide-19",
+    "title": "w07-c05 su-dung-modules-library-trong-python HW",
+    "file": "/slides/slide-19.pdf",
+    "pages": 5,
+    "topic": "modules",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w07-c05_su-dung-modules-library-trong-python_HW (done).pdf"
+  },
+  {
+    "id": "slide-20",
+    "title": "w08-w09-c06 class",
+    "file": "/slides/slide-20.pdf",
+    "pages": 33,
+    "topic": "oop",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w08-w09-c06_class (done).pdf"
+  },
+  {
+    "id": "slide-21",
+    "title": "w08-w09-c06 class HW",
+    "file": "/slides/slide-21.pdf",
+    "pages": 12,
+    "topic": "oop",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w08-w09-c06_class_HW (done).pdf"
+  },
+  {
+    "id": "slide-22",
+    "title": "w10-w11-c07 phan-tich-du-lieu-numpy",
+    "file": "/slides/slide-22.pdf",
+    "pages": 26,
+    "topic": "numpy",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w10-w11-c07_phan-tich-du-lieu-numpy (done).pdf"
+  },
+  {
+    "id": "slide-23",
+    "title": "w10-w11-c07 phan-tich-du-lieu-numpy HW",
+    "file": "/slides/slide-23.pdf",
+    "pages": 11,
+    "topic": "numpy",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w10-w11-c07_phan-tich-du-lieu-numpy_HW (done).pdf"
+  },
+  {
+    "id": "slide-24",
+    "title": "w12-w13-c08 bieu-dien-du-lieu-matplotlib",
+    "file": "/slides/slide-24.pdf",
+    "pages": 32,
+    "topic": "matplotlib",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w12-w13-c08_bieu-dien-du-lieu-matplotlib (done).pdf"
+  },
+  {
+    "id": "slide-25",
+    "title": "w12-w13-c08 bieu-dien-du-lieu-matplotlib HW sv",
+    "file": "/slides/slide-25.pdf",
+    "pages": 17,
+    "topic": "matplotlib",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w12-w13-c08_bieu-dien-du-lieu-matplotlib_HW sv.pdf"
+  },
+  {
+    "id": "slide-26",
+    "title": "w14-c09 thu-vien-pandas",
+    "file": "/slides/slide-26.pdf",
+    "pages": 31,
+    "topic": "pandas",
+    "type": "Slide bài giảng",
+    "originalName": "[IPPA233277] w14-c09_thu-vien-pandas (done).pdf"
+  },
+  {
+    "id": "slide-27",
+    "title": "w14-c09 thu-vien-pandas HW -sv",
+    "file": "/slides/slide-27.pdf",
+    "pages": 10,
+    "topic": "pandas",
+    "type": "Bài tập",
+    "originalName": "[IPPA233277] w14-c09_thu-vien-pandas_HW (done)-sv.pdf"
+  }
+]

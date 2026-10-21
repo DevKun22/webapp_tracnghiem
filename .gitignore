@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+coverage/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+.DS_Store
+
+# Vercel / IDE
+.vercel/
+.vscode/
+.idea/
+
+# Tài liệu không cần deploy
+docs/
+README_V*.md
+HW_AUDIT_STATUS.md
+
+# Supabase local files
+supabase/.temp/
+supabase/.branches/
+
+# Không ẩn supabase/migrations/

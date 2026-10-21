@@ -1,0 +1,14 @@
+{
+  "total": 92,
+  "by_topic": {
+    "basics": 12,
+    "flow": 12,
+    "collections": 12,
+    "functions": 12,
+    "modules": 8,
+    "oop": 8,
+    "numpy": 10,
+    "matplotlib": 8,
+    "pandas": 10
+  }
+}
