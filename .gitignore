@@ -1,32 +1,22 @@
-# Dependencies
+# Dependencies and generated build output
 node_modules/
-
-# Build
 dist/
 coverage/
 *.tsbuildinfo
-
-# Environment
+# Environment and secrets
 .env
 .env.*
 !.env.example
-
-# Logs
+# Local workspace
 *.log
 .DS_Store
-
-# Vercel / IDE
 .vercel/
 .vscode/
 .idea/
-
-# Tài liệu không cần deploy
+# Keep deploy repository free of release documentation
 docs/
 README_V*.md
 HW_AUDIT_STATUS.md
-
-# Supabase local files
+# Supabase local runtime state (SQL migrations remain tracked)
 supabase/.temp/
 supabase/.branches/
-
-# Không ẩn supabase/migrations/

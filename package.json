@@ -1,7 +1,7 @@
 {
   "name": "devkunn-learn",
   "private": true,
-  "version": "2.8.1",
+  "version": "2.9.1",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
