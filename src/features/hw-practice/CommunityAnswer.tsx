@@ -4,7 +4,7 @@ import {supabase} from '../../lib/supabase';
 import {makeAiPrompt,type AiPromptMode,type Choice} from './aiPrompt';
 
 type Summary={option_id:string;votes:number;total:number;percentage:number;status:string};
-type Props={questionId:string;body:string;options:Choice[];selected:string|null;flags?:string[];mode?:'tools'|'contribution';reviewStatus?:string;verifiedAnswer?:string|null;explanation?:string;submitRef?:Ref<HTMLButtonElement>};
+type Props={questionId:string;body:string;options:Choice[];selected:string|null;flags?:string[];mode?:'tools'|'contribution';reviewStatus?:string;verifiedAnswer?:string|null;explanation?:string;submitRef?:Ref<HTMLButtonElement>;onSubmissionState?:(state:'sending'|'sent'|'error')=>void};
 type ReportType='ambiguous'|'multiple_answers'|'missing_information';
 function contentHash(body:string,options:Choice[]):string{
   // Hash để phân biệt phiên bản nội dung, không dùng làm mã bảo mật.
@@ -12,7 +12,7 @@ function contentHash(body:string,options:Choice[]):string{
   for(let i=0;i<text.length;i++)h=Math.imul(h^text.charCodeAt(i),16777619);
   return(h>>>0).toString(16).padStart(8,'0');
 }
-export function CommunityAnswer({questionId,body,options,selected,flags=[],mode='contribution',reviewStatus,verifiedAnswer,explanation,submitRef}:Props){
+export function CommunityAnswer({questionId,body,options,selected,flags=[],mode='contribution',reviewStatus,verifiedAnswer,explanation,submitRef,onSubmissionState}:Props){
   const [activeTool,setActiveTool]=useState<'ai'|'report'|'stats'|null>(null);
   const [copied,setCopied]=useState<AiPromptMode|null>(null);
   const [busy,setBusy]=useState(false);
@@ -39,15 +39,15 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[],mode=
     const client=supabase;
     if(!client){setStatusKind('error');setStatus('Supabase chưa được cấu hình.');return;}
     if(!selected||!options.some(o=>o.id===selected)){setStatusKind('error');setStatus('Chọn A/B/C/D ở phía trên câu hỏi trước khi gửi.');return;}
-    setBusy(true);setStatusKind('info');setStatus('Đang ghi nhận phiếu đóng góp...');
+    setBusy(true);onSubmissionState?.('sending');setStatusKind('info');setStatus('Đang ghi nhận phiếu đóng góp...');
     try{
       const {data:{user},error:authError}=await client.auth.getUser();
       if(authError||!user)throw new Error('Bạn cần đăng nhập để gửi đóng góp.');
       const {error}=await client.from('hw_answer_submissions').upsert({user_id:user.id,question_id:questionId,option_id:selected,question_hash:hash,source:'learner_selected',updated_at:new Date().toISOString()},{onConflict:'user_id,question_id'});
       if(error)throw error;
-      setLastSent(selected);setStatusKind('success');setStatus(`Đã gửi phiếu ${selected}. Bạn có thể đổi lựa chọn và gửi lại.`);
+      setLastSent(selected);onSubmissionState?.('sent');setStatusKind('success');setStatus(`Đã gửi phiếu ${selected}. Bạn có thể đổi lựa chọn và gửi lại.`);
       await refresh();
-    }catch(error){setStatusKind('error');setStatus('Không gửi được: '+(error instanceof Error?error.message:'Lỗi kết nối'));}
+    }catch(error){console.error('Không gửi được đóng góp HW',error);onSubmissionState?.('error');setStatusKind('error');setStatus('Không gửi được đóng góp. Vui lòng kiểm tra kết nối và thử lại.');}
     finally{setBusy(false);}
   };
   const submitReport=async()=>{
@@ -59,7 +59,7 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[],mode=
       const {error}=await client.from('hw_question_reports').upsert({user_id:user.id,question_id:questionId,question_hash:hash,report_type:report,updated_at:new Date().toISOString()},{onConflict:'user_id,question_id'});
       if(error)throw error;
       setStatusKind('success');setStatus('Đã ghi nhận báo cáo vấn đề. Báo cáo này không tính vào phiếu đáp án.');setActiveTool(null);
-    }catch(error){setStatusKind('error');setStatus('Không gửi được báo cáo: '+(error instanceof Error?error.message:'Lỗi kết nối'));}
+    }catch(error){console.error('Không gửi được báo cáo HW',error);setStatusKind('error');setStatus('Không gửi được báo cáo. Vui lòng thử lại sau.');}
     finally{setBusy(false);}
   };
   if(mode==='contribution')return <section className="hw-community hw-community-contribution" aria-label="Phản hồi và đóng góp đáp án">

@@ -1,0 +1,5940 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "description": "Lớp ghi chú đáp án, chưa liên kết an toàn với câu hỏi thực tế",
+    "sourceFiles": [
+      {
+        "id": "python_basic_notes",
+        "filename": "t_ng_h_p_p_n_ghi_ch_thi_python.md"
+      },
+      {
+        "id": "python_advanced_notes",
+        "filename": "t_ng_h_p_p_n_ghi_ch_6_file_python_n_ng_cao.md"
+      }
+    ],
+    "targetCatalog": "DevKunn Learn V2.9.6 src/data/hwCatalog.json",
+    "notesCount": 337,
+    "linkedNotesCount": 0,
+    "status": "requires_pdf_and_question_alignment",
+    "documents": [
+      {
+        "topic": "Hàm",
+        "topicKey": "functions",
+        "suggestedDocumentId": "slide-15",
+        "catalogQuestionCount": 65,
+        "extractedNotes": 50,
+        "needsManualReview": 13,
+        "missingExplanations": 6,
+        "sourceSections": {
+          "fill": 6,
+          "missing": 1,
+          "multiple_choice": 43
+        }
+      },
+      {
+        "topic": "Tuple, Set, Dictionary",
+        "topicKey": "tuple_set_dictionary",
+        "suggestedDocumentId": "slide-13",
+        "catalogQuestionCount": 57,
+        "extractedNotes": 32,
+        "needsManualReview": 1,
+        "missingExplanations": 1,
+        "sourceSections": {
+          "dictionary": 10,
+          "set": 10,
+          "tuple": 12
+        }
+      },
+      {
+        "topic": "Danh sách - List",
+        "topicKey": "list",
+        "suggestedDocumentId": "slide-11",
+        "catalogQuestionCount": 60,
+        "extractedNotes": 42,
+        "needsManualReview": 9,
+        "missingExplanations": 8,
+        "sourceSections": {
+          "fill": 8,
+          "multiple_choice": 34
+        }
+      },
+      {
+        "topic": "Cấu trúc lặp",
+        "topicKey": "loops",
+        "suggestedDocumentId": "slide-09",
+        "catalogQuestionCount": 46,
+        "extractedNotes": 20,
+        "needsManualReview": 8,
+        "missingExplanations": 8,
+        "sourceSections": {
+          "fill": 8,
+          "multiple_choice": 12
+        }
+      },
+      {
+        "topic": "Cấu trúc rẽ nhánh",
+        "topicKey": "conditions",
+        "suggestedDocumentId": "slide-07",
+        "catalogQuestionCount": 35,
+        "extractedNotes": 20,
+        "needsManualReview": 7,
+        "missingExplanations": 7,
+        "sourceSections": {
+          "fill": 7,
+          "multiple_choice": 13
+        }
+      },
+      {
+        "topic": "Khái niệm cơ bản",
+        "topicKey": "basics",
+        "suggestedDocumentId": "slide-05",
+        "catalogQuestionCount": 45,
+        "extractedNotes": 30,
+        "needsManualReview": 1,
+        "missingExplanations": 0,
+        "sourceSections": {
+          "multiple_choice": 30
+        }
+      },
+      {
+        "topic": "Pandas",
+        "topicKey": "pandas",
+        "suggestedDocumentId": "slide-27",
+        "catalogQuestionCount": 30,
+        "extractedNotes": 25,
+        "needsManualReview": 0,
+        "missingExplanations": 0,
+        "sourceSections": {
+          "multiple_choice": 25
+        }
+      },
+      {
+        "topic": "Matplotlib",
+        "topicKey": "matplotlib",
+        "suggestedDocumentId": "slide-25",
+        "catalogQuestionCount": 29,
+        "extractedNotes": 24,
+        "needsManualReview": 0,
+        "missingExplanations": 0,
+        "sourceSections": {
+          "multiple_choice": 24
+        }
+      },
+      {
+        "topic": "NumPy",
+        "topicKey": "numpy",
+        "suggestedDocumentId": "slide-23",
+        "catalogQuestionCount": 56,
+        "extractedNotes": 44,
+        "needsManualReview": 1,
+        "missingExplanations": 44,
+        "sourceSections": {
+          "multiple_choice": 44
+        }
+      },
+      {
+        "topic": "Class & OOP",
+        "topicKey": "oop",
+        "suggestedDocumentId": "slide-21",
+        "catalogQuestionCount": 17,
+        "extractedNotes": 10,
+        "needsManualReview": 1,
+        "missingExplanations": 2,
+        "sourceSections": {
+          "multiple_choice": 10
+        }
+      },
+      {
+        "topic": "Modules",
+        "topicKey": "modules",
+        "suggestedDocumentId": "slide-19",
+        "catalogQuestionCount": 12,
+        "extractedNotes": 10,
+        "needsManualReview": 0,
+        "missingExplanations": 0,
+        "sourceSections": {
+          "multiple_choice": 10
+        }
+      },
+      {
+        "topic": "Xử lý chuỗi",
+        "topicKey": "strings",
+        "suggestedDocumentId": "slide-17",
+        "catalogQuestionCount": 65,
+        "extractedNotes": 30,
+        "needsManualReview": 1,
+        "missingExplanations": 0,
+        "sourceSections": {
+          "multiple_choice": 30
+        }
+      }
+    ],
+    "constraints": [
+      "Không ghép theo số câu giữa tài liệu đáp án và HW catalog khi chưa xác minh",
+      "Không ghi đè trường answer hay reviewStatus trong dữ liệu ứng dụng",
+      "Câu trùng số phải phân biệt section (tuple/set/dictionary)",
+      "Không coi giải thích trong file ghi chú là đáp án đã xác minh"
+    ]
+  },
+  "notes": [
+    {
+      "id": "python_basic_notes:basics:multiple_choice:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Python là ngôn ngữ lập trình bậc cao, thông dịch, hướng đối tượng.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Ký tự `#` dùng để bắt đầu một ghi chú (comment) đơn dòng.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Tên biến hợp lệ KHÔNG ĐƯỢC bắt đầu bằng chữ số (ví dụ: `2variable` là sai).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Python phân biệt chữ hoa chữ thường (Case-sensitive).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Hàm `type()` dùng để kiểm tra kiểu dữ liệu của một biến.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Kiểu dữ liệu của `3.14` là số thực `float`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Toán tử chia lấy phần nguyên trong Python là `//`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Toán tử chia lấy phần dư trong Python là `%`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Toán tử mũ (lũy thừa) trong Python là `**`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Ép kiểu chuỗi sang số nguyên sử dụng hàm `int()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:011",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Hàm `print()` xuất dữ liệu ra màn hình console.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:012",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Hàm `input()` nhận dữ liệu từ người dùng và LUÔN trả về kiểu chuỗi (`str`).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:013",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phép nối 2 chuỗi trong Python sử dụng toán tử `+`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:014",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phép nhân chuỗi với một số nguyên $n$ sẽ lặp lại chuỗi đó $n$ lần.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:015",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Hàm `len()` trả về độ dài (số ký tự) của chuỗi.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:016",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Lát cắt chuỗi `s[0:3]` lấy từ vị trí 0 đến 2.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:017",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Phương thức `strip()` loại bỏ khoảng trắng dư thừa ở đầu và cuối chuỗi.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:018",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Phương thức `lower()` chuyển toàn bộ chuỗi thành chữ thường.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:019",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Phương thức `format()` hoặc f-string dùng để định dạng chuỗi. *(Lưu ý: PDF in trùng số câu 19)*.",
+      "status": "needs_manual_review",
+      "flags": [
+        "duplicate_number_in_pdf"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:020",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Số phức trong Python có dạng `a + bj` (sử dụng ký tự `j` hoặc `J` biểu diễn phần ảo).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:021",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 21,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Khai báo biến đồng thời: `x, y, z = 1, 2, 3`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:022",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 22,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Biến toàn cục (Global variable) khai báo ngoài hàm, biến cục bộ (Local) khai báo trong hàm.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:023",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 23,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Từ khóa `global` dùng để khai báo lại biến toàn cục bên trong hàm.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:024",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 24,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Mọi giá trị khác 0, chuỗi không rỗng, danh sách không rỗng khi ép sang `bool` đều là `True`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:025",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 25,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Các từ khóa chuẩn của Python (như `if`, `for`, `def`, `class`...) KHÔNG ĐƯỢC dùng làm tên biến.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:026",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 26,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Toán tử gán kết hợp: `x += 3` tương đương với `x = x + 3`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:027",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 27,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Toán tử `is` kiểm tra xem hai biến có cùng trỏ tới một đối tượng trong bộ nhớ hay không (Identity operator).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:028",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 28,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Thứ tự ưu tiên toán tử: Ngoặc `()` $\\rightarrow$ Mũ `**` $\\rightarrow$ Nhân/Chia `*`, `/`, `//`, `%` $\\rightarrow$ Cộng/Trừ `+`, `-`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:029",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 29,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`10 // 3` trả về phần nguyên là `3`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:basics:multiple_choice:030",
+      "sourceId": "python_basic_notes",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 30,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`10 % 3` trả về phần dư là `1`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:fill:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 2,
+      "kind": "fill_blank",
+      "answerRaw": "`if a > b:`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:fill:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 3,
+      "kind": "fill_blank",
+      "answerRaw": "`if a != b:`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:fill:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 4,
+      "kind": "fill_blank",
+      "answerRaw": "`if a == b: ... else:`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:fill:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 5,
+      "kind": "fill_blank",
+      "answerRaw": "`if a == b: ... elif a > b: ... else:`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:fill:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 6,
+      "kind": "fill_blank",
+      "answerRaw": "`and`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:fill:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 7,
+      "kind": "fill_blank",
+      "answerRaw": "`if a == b else` (Toán tử ba ngôi - Ternary Operator)",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:fill:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 8,
+      "kind": "fill_blank",
+      "answerRaw": "`if a == c or b == c else`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Cú pháp cấu trúc điều kiện cơ bản bắt đầu bằng từ khóa `if`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Toán tử so sánh bằng trong Python là `==`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Toán tử so sánh khác trong Python là `!=`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:011",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Từ khóa `elif` là viết tắt của \"else if\".",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:012",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Toán tử logic `and` trả về `True` chỉ khi cả hai mệnh đề đều đúng.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:013",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Toán tử logic `or` trả về `True` khi có ít nhất một mệnh đề đúng.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:014",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Toán tử logic `not` đảo ngược trạng thái đúng/sai của mệnh đề.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:015",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Cú pháp toán tử ba ngôi (Short-hand if-else): `val_if_true if condition else val_if_false`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:016",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Python sử dụng thụt lùi đầu dòng (Indentation - khoảng trắng/tab) để xác định khối lệnh (block code).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:017",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Khối lệnh `if` không thể rỗng, sử dụng `pass` nếu chưa muốn viết logic xử lý.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:018",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Biểu thức `bool(\"\")`, `bool(0)`, `bool([])` đều trả về `False`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:019",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Đánh giá biểu thức điều kiện kết hợp `and`/`or` theo thứ tự ưu tiên toán tử.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:conditions:multiple_choice:020",
+      "sourceId": "python_basic_notes",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Mệnh đề kiểm tra một phần tử nằm trong tập hợp sử dụng toán tử `in`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 1,
+      "kind": "fill_blank",
+      "answerRaw": "`while i < 6:`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 2,
+      "kind": "fill_blank",
+      "answerRaw": "`break`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 3,
+      "kind": "fill_blank",
+      "answerRaw": "`for x in fruits:`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 4,
+      "kind": "fill_blank",
+      "answerRaw": "`continue`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 5,
+      "kind": "fill_blank",
+      "answerRaw": "`else:`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 6,
+      "kind": "fill_blank",
+      "answerRaw": "`continue`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 7,
+      "kind": "fill_blank",
+      "answerRaw": "`range(6)`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:fill:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 9,
+      "kind": "fill_blank",
+      "answerRaw": "`break`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Vòng lặp `while` chạy khi điều kiện còn `True`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Vòng lặp `for` duyệt qua từng phần tử của một iterable.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:011",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`range(5)` tạo chuỗi số từ 0 đến 4 (5 phần tử).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:012",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`range(2, 6)` tạo chuỗi số bắt đầu từ 2 và kết thúc trước 6 $\\rightarrow 2, 3, 4, 5$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:013",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`range(1, 10, 2)` tạo chuỗi số lẻ từ 1 đến 9: $1, 3, 5, 7, 9$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:014",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Lệnh `break` thoát hoàn toàn khỏi vòng lặp ngay lập tức.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:015",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Lệnh `continue` bỏ qua phần còn lại của vòng lặp hiện tại và chuyển sang lần lặp tiếp theo.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:016",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Khối `else` sau vòng lặp thực thi khi vòng lặp kết thúc bình thường (không bị ngắt bởi `break`).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:017",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Vòng lặp lồng nhau (Nested loops) là vòng lặp nằm bên trong một vòng lặp khác.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:018",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Vòng lặp vô tận (Infinite loop) xảy ra khi điều kiện lặp luôn luôn đúng (`True`).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:019",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`sum(range(1, 6))` tính tổng $1 + 2 + 3 + 4 + 5 = 15$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:loops:multiple_choice:020",
+      "sourceId": "python_basic_notes",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Cú pháp `pass` được dùng làm câu lệnh giữ chỗ (placeholder) rỗng không thực hiện thao tác gì.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 1,
+      "kind": "fill_blank",
+      "answerRaw": "`fruits[1]`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 2,
+      "kind": "fill_blank",
+      "answerRaw": "`fruits[0] = \"kiwi\"`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 3,
+      "kind": "fill_blank",
+      "answerRaw": "`fruits.append(\"orange\")`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 4,
+      "kind": "fill_blank",
+      "answerRaw": "`fruits.insert(1, \"lemon\")`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 5,
+      "kind": "fill_blank",
+      "answerRaw": "`fruits.remove(\"banana\")`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 6,
+      "kind": "fill_blank",
+      "answerRaw": "`fruits[-1]`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 7,
+      "kind": "fill_blank",
+      "answerRaw": "`fruits[2:5]`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:fill:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 8,
+      "kind": "fill_blank",
+      "answerRaw": "`len(fruits)`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Khởi tạo list bằng ngoặc vuông `[]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Chỉ số phần tử đầu tiên trong List là `0`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:011",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`list[-1]` dùng để lấy phần tử cuối cùng của List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:012",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`lst[1:4]` lấy từ chỉ số 1 đến 3 $\\rightarrow$ `[20, 30, 40]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:013",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`append(x)` thêm phần tử `x` vào cuối List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:014",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`insert(1, 15)` chèn 15 vào vị trí chỉ số 1.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:015",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`extend([4, 5])` nối thêm các phần tử của iterable vào cuối List $\\rightarrow$ `[1, 2, 3, 4, 5]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:016",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`remove(x)` xóa phần tử xuất hiện đầu tiên có giá trị bằng `x`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:017",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`pop(2)` xóa và trả về phần tử tại chỉ số 2 (giá trị 30). List còn `[10, 20, 40]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:018",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Lệnh `del lst[0]` xóa phần tử tại chỉ số 0.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:019",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "missing_question",
+      "answerRaw": "—",
+      "answerChoices": [],
+      "explanation": "Không có câu 19 trong PDF theo bản ghi chú.",
+      "status": "needs_manual_review",
+      "flags": [
+        "ambiguous_answer",
+        "missing_source_question"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:020",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`clear()` làm rỗng danh sách, trả về `[]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:021",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 21,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`index(30)` trả về vị trí đầu tiên của giá trị 30 (chỉ số 2).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:022",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 22,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`count(2)` đếm số lần giá trị 2 xuất hiện trong List $\\rightarrow 3$ lần.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:023",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 23,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`sort()` sắp xếp danh sách tăng dần mặc định.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:024",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 24,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`sort(reverse=True)` sắp xếp danh sách giảm dần.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:025",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 25,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`reverse()` đảo ngược thứ tự các phần tử trong List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:026",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 26,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`lst.copy()` hoặc `lst[:]` tạo một bản sao độc lập (shallow copy) của List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:027",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 27,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phép cộng `+` nối 2 danh sách lại với nhau.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:028",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 28,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Phép nhân `*` nhân bản các phần tử của danh sách lên $n$ lần.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:029",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 29,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "List Comprehension tạo danh sách các số bình phương: `[0, 1, 4, 9, 16]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:030",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 30,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "List Comprehension kèm điều kiện lọc số chẵn: `[0, 2, 4, 6, 8]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:031",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 31,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Slicing bước nhảy âm `lst[::-1]` dùng để đảo ngược danh sách.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:032",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 32,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Ma trận 2D: `matrix[1][2]` truy cập hàng 1, cột 2 $\\rightarrow$ giá trị 6.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:033",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 33,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`max(lst)` trả về phần tử có giá trị lớn nhất trong List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:034",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 34,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`min(lst)` trả về phần tử có giá trị nhỏ nhất trong List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:035",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 35,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`sum(lst)` tính tổng tất cả các phần tử số trong List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:036",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 36,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Toán tử `in` kiểm tra sự tồn tại của phần tử trong List.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:037",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 37,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Gán `b = a` tạo một tham chiếu cùng trỏ tới một vùng nhớ. Thay đổi `b` làm `a` thay đổi theo.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:038",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 38,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Flatten list 2D thành 1D bằng List Comprehension lồng nhau.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:039",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 39,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Slicing `lst[1:5:2]` lấy phần tử từ chỉ số 1 đến 4 với bước nhảy 2 $\\rightarrow$ `[20, 40]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:040",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 40,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Thay thế một lát cắt `lst[1:3] = [20, 30]` gán lại các giá trị tại vị trí tương ứng.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:041",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 41,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`[1, 2] * 0` trả về danh sách rỗng `[]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:list:multiple_choice:042",
+      "sourceId": "python_basic_notes",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 42,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`list(\"hello\")` chuyển chuỗi thành danh sách các kí tự: `['h', 'e', 'l', 'l', 'o']`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Dictionary lưu trữ dữ liệu dưới dạng cặp `key: value`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Key trong Dictionary phải thuộc kiểu dữ liệu Immutable (ví dụ: int, str, tuple). List là mutable nên KHÔNG THỂ làm Key.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Truy cập giá trị qua key: `d['key']` hoặc `d.get('key')`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phương thức `d.get('key', default)` trả về `default` nếu không tìm thấy key thay vì báo lỗi.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Thêm/Cập nhật phần tử: `d['new_key'] = new_value`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Phương thức `d.pop('key')` xóa key và trả về value tương ứng.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`d.keys()` trả về danh sách các key.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`d.values()` trả về danh sách các giá trị.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`d.items()` trả về danh sách các cặp tuple `(key, value)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:dictionary:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "dictionary",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Merge/Update dictionary: `d1.update(d2)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Set không chứa các phần tử trùng lặp và các phần tử không có thứ tự.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Tạo Set rỗng bằng `set()`. Cú pháp `{}` sẽ tạo một Dictionary rỗng.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phương thức `s.add(x)` thêm phần tử `x` vào Set.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`s.remove(x)` xóa phần tử `x`, gây lỗi `KeyError` nếu `x` không tồn tại. `s.discard(x)` xóa không gây lỗi.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Phép hợp Union: `s1 | s2` hoặc `s1.union(s2)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phép giao Intersection: `s1 & s2` hoặc `s1.intersection(s2)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phép hiệu Difference: `s1 - s2` lấy các phần tử có trong `s1` nhưng không có trong `s2`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phép hiệu đối xứng Symmetric Difference: `s1 ^ s2`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Biểu thức điều kiện kiểm tra tập con: `s1.issubset(s2)` hoặc `s1 <= s2`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:set:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "set",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Tự động loại bỏ trùng lặp: `set([1, 2, 2, 3, 3, 3])` $\\rightarrow$ `{1, 2, 3}`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Tuple là kiểu dữ liệu Immutable (không thể thay đổi sau khi tạo).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Cú pháp tạo Tuple 1 phần tử bắt buộc phải có dấu phẩy: `(1,)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "TRUNCATE/Slicing: `t[1:3]` lấy từ chỉ số 1 đến 2 $\\rightarrow$ `(2, 3)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phép cộng Tuple nối 2 tuple lại với nhau: `(1, 2, 3, 4)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Phép nhân Tuple nhân bản phần tử: `(1, 2, 1, 2, 1, 2)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Báo lỗi `TypeError` vì Tuple không hỗ trợ gán lại giá trị cho phần tử.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Hàm `len(t)` trả về số lượng phần tử của Tuple.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Unpacking Tuple: `a, b, c = (1, 2, 3)` $\\rightarrow a=1, b=2, c=3$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "**Lỗi đề bài:** Cú pháp `*soam, *soduong = tuple1` chứa 2 toán tử unpack `*` gây ra lỗi `SyntaxError: two starred expressions in assignment`.",
+      "status": "needs_manual_review",
+      "flags": [
+        "two_starred_expressions"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 10,
+      "kind": "open_response",
+      "answerRaw": "T = (1, 9, -1, 6, 3, 4, -5, 1, -1, 2, -5, 6, 7, 8, 9, 2)\nT1 = tuple(x if x > 0 else -x for x in T)\nT2 = tuple(dict.fromkeys(T1))",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:011",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Phương thức `t.index(x)` trả về chỉ số đầu tiên của phần tử `x`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:tuple_set_dictionary:tuple:012",
+      "sourceId": "python_basic_notes",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "sourceSection": "tuple",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phương thức `t.count(x)` đếm số lần xuất hiện của `x`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:fill:001",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 1,
+      "kind": "fill_blank",
+      "answerRaw": "`def my_function():`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:fill:002",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 2,
+      "kind": "fill_blank",
+      "answerRaw": "`my_function()`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:fill:003",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 3,
+      "kind": "fill_blank",
+      "answerRaw": "`return x + 5`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:fill:004",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 4,
+      "kind": "fill_blank",
+      "answerRaw": "`*kids` (chấp nhận `*args`)",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:fill:005",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 5,
+      "kind": "fill_blank",
+      "answerRaw": "`**kids` (chấp nhận `**kwargs`)",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:fill:006",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "fill",
+      "sourceQuestionNumber": 6,
+      "kind": "fill_blank",
+      "answerRaw": "`lambda a, b: a ** 2 + b`",
+      "answerChoices": [],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "answer_needs_prompt"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:missing:050",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "missing",
+      "sourceQuestionNumber": 50,
+      "kind": "missing_question",
+      "answerRaw": null,
+      "answerChoices": [],
+      "explanation": "Bản ghi chú nói câu 50 không có đề bài.",
+      "status": "needs_manual_review",
+      "flags": [
+        "missing_source_question"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:007",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`min(a)` tìm kí tự có mã ASCII nhỏ nhất (`' '` khoảng trắng có ASCII 32). `max(a)` tìm kí tự có ASCII lớn nhất (`'z'` có ASCII 122).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:008",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`ord('a')` = 97, `ord(' ')` = 32 $\\rightarrow 97 + 32 = 129$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:009",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Phương thức `title()` viết hoa chữ cái đầu tiên của từng từ trong chuỗi.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:010",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Cú pháp khởi tạo hàm đúng trong Python là `def function_name():`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:011",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Hàm `f(a, b=1, c=2)` truyền `f(1, c=3)` $\\rightarrow a=1, b=1, c=3$. Mảng trả về: `[1, 1, 3]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:012",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`f(a, b)` nhận tham số, `b` gán default bằng `a` lúc định nghĩa hàm. `f(1)` $\\rightarrow a=1, b=1 \\rightarrow 1+1=2$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:013",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Cú pháp `def f(*args)` cho phép truyền số lượng tham số vị trí tùy ý.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:014",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Lời gọi `f(1, 2, 3)` truyền 3 vị trí. Cả `*a` nhận tuple 3 phần tử.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:015",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`**kwargs` gom các tham số đặt tên thành một dictionary.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:016",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "F",
+      "answerChoices": [
+        "F"
+      ],
+      "explanation": "Khai báo `def f(a=1, b):` bị lỗi cú pháp `SyntaxError` do tham số mặc định nằm trước tham số không mặc định.",
+      "status": "needs_manual_review",
+      "flags": [
+        "ambiguous_answer",
+        "source_problem"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:017",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Hàm `fun1(4)` tính `4 + fun2(4)`. `fun2(4)` tính `4 * 2 = 8`. Kết quả: `4 + 8 = 12`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:018",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Đơn giản hóa hàm trả về biểu thức logic so sánh direct.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:019",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Hàm thực hiện đổi chỗ $x, y$ và trả về kết quả dạng tuple.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:020",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Cú pháp lambda: `lambda arguments: expression`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:021",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 21,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Biến khai báo bên trong hàm có phạm vi cục bộ (local scope).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:022",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 22,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Sử dụng từ khóa `global` để thay đổi giá trị biến toàn cục bên trong hàm.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:023",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 23,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Đệ quy tính tổng từ `n` giảm về 0: $5 + 4 + 3 + 2 + 1 + 0 = 15$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:024",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 24,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Đệ quy tính giai thừa: $5! = 120$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:025",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 25,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Đệ quy tính số Fibonacci thứ $n$. $Fib(6) = 8$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:026",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 26,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Đệ quy đếm số chữ số của một số nguyên.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:027",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 27,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`filter()` lọc phần tử thỏa mãn điều kiện hàm boolean truyền vào.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:028",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 28,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`map()` áp dụng một hàm lên toàn bộ phần tử của iterable.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:029",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 29,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`map(lambda x: x*2, [1, 2, 3])` $\\rightarrow$ `[2, 4, 6]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:030",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 30,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`filter(lambda x: x%2==0, [1, 2, 3, 4])` $\\rightarrow$ `[2, 4]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:031",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 31,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`reduce()` trong `functools` thực hiện tích lũy (tính tổng các phần tử): $1+2+3+4 = 10$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:032",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 32,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`zip([1, 2], ['a', 'b'])` ghép tương ứng theo cặp: `[(1, 'a'), (2, 'b')]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:033",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 33,
+      "kind": "multiple_choice",
+      "answerRaw": "H",
+      "answerChoices": [
+        "H"
+      ],
+      "explanation": "Hàm `all()` trả về `True` nếu tất cả phần tử đều truthy.",
+      "status": "needs_manual_review",
+      "flags": [
+        "ambiguous_answer"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:034",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 34,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Hàm `any()` trả về `True` nếu có ít nhất một phần tử truthy.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:035",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 35,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`sorted([3, 1, 4, 2])` trả về danh sách đã sắp xếp `[1, 2, 3, 4]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:036",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 36,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`eval(\"2 + 3 * 4\")` thực thi chuỗi như biểu thức Python $\\rightarrow 2 + 12 = 14$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:037",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 37,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Hàm `exec()` dùng để thực thi mã Python dạng chuỗi động phức tạp.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:038",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 38,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Chuỗi Docstring giải thích hàm được đặt ngay sau dòng `def` và nằm trong `\"\"\"...\"\"\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:039",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 39,
+      "kind": "multiple_choice",
+      "answerRaw": "D/A",
+      "answerChoices": [
+        "D",
+        "A"
+      ],
+      "explanation": "**Lỗi cú pháp thời gian chạy:** Trong hàm không dùng `global s` nhưng lại có `s = s + ...` dẫn đến `UnboundLocalError`. Nếu xét theo ý đồ đề thi lý thuyết: Chọn D (hoặc A nếu là mã chạy thực tế gây crash).",
+      "status": "needs_manual_review",
+      "flags": [
+        "ambiguous_answer",
+        "runtime_vs_intended_answer",
+        "source_problem"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:040",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 40,
+      "kind": "multiple_choice",
+      "answerRaw": "A/D",
+      "answerChoices": [
+        "A",
+        "D"
+      ],
+      "explanation": "Tương tự Q39, do truy cập biến cục bộ chưa khởi tạo `UnboundLocalError`. Chọn A/D tùy góc độ chấm.",
+      "status": "needs_manual_review",
+      "flags": [
+        "ambiguous_answer",
+        "runtime_vs_intended_answer",
+        "source_problem"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:041",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 41,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Hàm nhận tham số mặc định là danh sách rỗng mutable `[]`. Các lần gọi làm thay đổi danh sách này: `[1]`, `[1, 2]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:042",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 42,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Tương tự Q41, danh sách mutable lưu lại trạng thái qua các lần gọi hàm mà không truyền danh sách mới.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:043",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 43,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`def f(x, y=2, z=3): return x + y + z` với `f(1, z=5)` $\\rightarrow 1 + 2 + 5 = 8$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:044",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 44,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "**Lỗi cú pháp:** Đề bài dùng `print a` (cú pháp Python 2). Trên Python 3 sẽ báo `SyntaxError`. Nếu xét lý thuyết logic: Giá trị `a` ngoài hàm không bị thay đổi vì `a` trong hàm là local variable $\\rightarrow$ In 10.",
+      "status": "needs_manual_review",
+      "flags": [
+        "python2_syntax",
+        "source_problem"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:045",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 45,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Biến `x` bên trong hàm được khai báo `global x`, nên giá trị `x` toàn cục bị thay đổi thành 20.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:046",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 46,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Hàm đệ quy tính $2^4 = 16$.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:047",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 47,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`list(map(str, [1, 2, 3]))` chuyển các số thành chuỗi: `['1', '2', '3']`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:048",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 48,
+      "kind": "multiple_choice",
+      "answerRaw": "H",
+      "answerChoices": [
+        "H"
+      ],
+      "explanation": "Lọc chuỗi có độ dài lớn hơn 3: `['apple', 'banana']`.",
+      "status": "needs_manual_review",
+      "flags": [
+        "ambiguous_answer"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_basic_notes:functions:multiple_choice:049",
+      "sourceId": "python_basic_notes",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 49,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`lambda x: x[::-1]` đảo ngược chuỗi `'python'` $\\rightarrow$ `'nohtyp'`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:001",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Độ dài chuỗi `s` được tính bằng hàm `len(s)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:002",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`s = \"Python\"` $\\rightarrow$ `len(s)` $= 6$. Cắt chuỗi `s[1:6]` trích xuất từ chỉ số 1 đến 5 (5 ký tự).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:003",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`s = \"Hello, World!\"` $\\rightarrow$ Độ dài chuỗi bao gồm cả dấu phẩy và khoảng trắng là 13. Cắt `s[0:13]` trả về toàn bộ chuỗi 13 ký tự. (Nếu theo đáp án tính số ký tự index thì đáp án chính xác theo đề là **16**).",
+      "status": "needs_manual_review",
+      "flags": [
+        "inconsistent_explanation"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:004",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Chuỗi (String) trong Python là **Immutable** (không thể gán/thay đổi trực tiếp ký tự sau khi đã tạo).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:005",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`s = \"123456789\"` $\\rightarrow$ `s[7::-2]` bắt đầu từ chỉ số 7 (số `'8'`), bước nhảy `-2` lùi lại: `'8'`, `'6'`, `'4'`, `'2'` $\\rightarrow$ `\"8642\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:006",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`\"Python\".isalpha()` $\\rightarrow$ `True`. `\"1234\".isalpha()` $\\rightarrow$ `False`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:007",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`\"A B C D E\".split()` tách thành list `['A', 'B', 'C', 'D', 'E']`. Phần tử chỉ số `[2]` là `\"C\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:008",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Kiểm tra chuỗi con `\"Python\".lower() in \"Python Programming\".lower()` $\\rightarrow$ `True`. Trường hợp phân biệt hoa thường sẽ trả về `False` tùy ngữ cảnh.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:009",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "(Bẫy Immutable):`s = \"123456\"`; `s[0] = '8'` $\\rightarrow$ Báo lỗi `TypeError` vì chuỗi không hỗ trợ gán theo chỉ số.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:010",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Đoạn mã duyệt qua các từ và kiểm tra độ dài. Không có chuỗi nào bị lỗi cú pháp.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:011",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`s = \"abcde\"` $\\rightarrow$ `s[2]` trả về ký tự `'c'`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:012",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Vòng lặp `for i in range(10): print(i)` sẽ in các số nguyên từ **0 đến 9**.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:013",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Đếm số lần xuất hiện của chuỗi con bằng `s.count('a')`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:014",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "(Bẫy phương thức):Chuỗi không có phương thức `.append()`. Thực thi `s.append()` sẽ gây lỗi `AttributeError`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:015",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Vòng lặp `range(0, 10, 4)` sinh ra các giá trị `0, 4, 8` $\\rightarrow$ Vòng lặp thực hiện **3 lần**.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:016",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Tìm vị trí đầu tiên của chuỗi con dùng phương thức `find()` (trả về `-1` nếu không thấy).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:017",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Phương thức `replace(old, new)` thay thế tất cả xuất hiện của chuỗi cũ bằng chuỗi mới.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:018",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`s = \"Python\"`",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:019",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`s.upper()` chuyển toàn bộ chuỗi thành chữ hoa.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:020",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`s.startswith('Py')` $\\rightarrow$ `True` (1). `s.endswith('on')` $\\rightarrow$ `True` (1). Tổng giá trị/vị trí tương ứng là `2, 6`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:021",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 21,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Để tách chuỗi thành danh sách các từ dựa trên khoảng trắng, dùng `s.split()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:022",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 22,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Phương thức `strip()` loại bỏ khoảng trắng dư thừa ở cả 2 đầu chuỗi.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:023",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 23,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`\"hello world\".title()` viết hoa chữ cái đầu tiên của mỗi từ $\\rightarrow$ `\"Hello World\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:024",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 24,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "`join()` kết hợp danh sách các chuỗi thành một chuỗi duy nhất với ký tự phân cách.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:025",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 25,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`\" \".join([\"Hello\", \"World\"])` tạo ra chuỗi `\"Hello World\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:026",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 26,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Để lấy độ dài của chuỗi `x`, dùng hàm `len(x)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:027",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 27,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Tách chuỗi dùng `split()` và thay thế/nối dùng `replace()` hoặc `join()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:028",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 28,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Phương thức thay thế ký tự trong chuỗi là `replace()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:029",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 29,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`s1 = \"Good\"`, `s2 = \"Afternoon!\"` $\\rightarrow$ Phép cộng chuỗi `s1 + s2` trả về `\"GoodAfternoon!\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:strings:multiple_choice:030",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 30,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Chuyển đổi một số hoặc đối tượng sang dạng chuỗi bằng hàm `str()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:001",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Tất cả các nhận định A, B, C về Module đều đúng (giúp tái sử dụng mã nguồn, chia nhỏ chương trình, dễ quản lý).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:002",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Module trong Python chia làm 2 loại chính: **Built-in Modules** (tích hợp sẵn) và **User-defined Modules** (do người dùng tự định nghĩa).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:003",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Các module được cài sẵn trong Python (như `math`, `sys`, `random`) gọi là **Built-in Modules**.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:004",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Các module do lập trình viên tự viết ra lưu dưới tệp `.py` gọi là **User-defined Modules**.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:005",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Cú pháp nhập nhiều module trên 1 dòng: `import math, random`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:006",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Nhập đích danh một hàm từ module: `from math import sqrt`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:007",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Để nhập tất cả các hàm/biến từ module vào không gian tên hiện tại, dùng ký tự đại diện `*`: `from math import *`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:008",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Biến đặc biệt `__name__` lưu trữ tên của module. Nếu file chạy trực tiếp, `__name__` có giá trị là `\"__main__\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:009",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Khi nhập một module, Python sẽ tìm kiếm trước tiên ở **Thư mục hiện hành (Current Directory)** chứa file script.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:modules:multiple_choice:010",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Tệp `__init__.py` đánh dấu một thư mục là một **Package** chứa các module con.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:001",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Java không phải là thuật ngữ riêng của Python (ngôn ngữ lập trình khác).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:002",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "(Bẫy cú pháp):",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:003",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "(Bẫy Toán tử `__sub__`):",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:004",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "conditional_explanation"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:005",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Cú pháp khởi tạo Instance của lớp `Dog` truyền tên và tuổi: `Dog(\"Rufus\", 3)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:006",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Báo lỗi SyntaxError nếu truyền tham số vị trí sau tham số mặc định. `def walk(self, speed=\"slow\"):` $\\rightarrow$ kết quả in chuỗi `*walking*`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:007",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Lớp `GoldenRetriever` ghi đè (override) phương thức `speak(sound=\"Arff\")`. Trả về `\"Arff!\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:008",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Đối tượng thuộc lớp `Dachshund` kế thừa `speak()` từ lớp cha `Dog`, trả về giá trị mặc định `\"Woof!\"`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:009",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:oop:multiple_choice:010",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Lớp `A` có thuộc tính lớp `v = 'A'`. Tạo 3 đối tượng `[A(), A(), A()]`. Vòng lặp in `x.v` xuất ra `A A A`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:001",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:002",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:003",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:004",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:005",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:006",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:007",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:008",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:009",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:010",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:011",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:012",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:013",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:014",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:015",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:016",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:017",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:018",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:019",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:020",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:021",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 21,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:022",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 22,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:023",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 23,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:024",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 24,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:025",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 25,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:026",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 26,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:027",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 27,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:028",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 28,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:029",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 29,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:030",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 30,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:031",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 31,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:032",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 32,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:033",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 33,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:034",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 34,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:035",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 35,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:036",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 36,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:037",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 37,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_manual_review",
+      "flags": [
+        "source_problem",
+        "statement_code_mismatch"
+      ],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:038",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 38,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:039",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 39,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:040",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 40,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:041",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 41,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:042",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 42,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:043",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 43,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:numpy:multiple_choice:044",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 44,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": null,
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:001",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Lệnh `plt.scatter()` dùng để vẽ biểu đồ tán xạ (Scatter plot).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:002",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Hàm `plt.xlabel()` thiết lập nhãn mô tả cho trục hoành (trục X).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:003",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`plt.legend()` có chức năng hiển thị hộp chú giải (Legend) trên đồ thị.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:004",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Đặt tiêu đề chính cho biểu đồ bằng `plt.title()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:005",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Style cổ điển mặc định của Matplotlib là `'classic'`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:006",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Vạch chia/đánh dấu giá trị trên trục X gọi là các Ticks (`xticks`).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:007",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Hàm `plt.annotate()` tạo ghi chú kèm múi tên trỏ đến vị trí cụ thể trên đồ thị.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:008",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`plt.grid(True)` bật hiển thị lưới tọa độ cho biểu đồ.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:009",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Thay đổi kích thước khung hình đồ thị bằng `plt.figure(figsize=(width, height))`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:010",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Đối số `alpha` điều chỉnh độ trong suốt của đường vẽ (từ 0.0 đến 1.0).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:011",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Để tạo biểu đồ 3D, cần truyền `projection='3d'` khi thêm subplot.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:012",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Lớp `animation.FuncAnimation` dùng để tạo các biểu đồ động trong Matplotlib.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:013",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Hàm `plt.fill_between()` tô màu phần không gian giữa hai đường cong.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:014",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "`plt.colorbar()` hiển thị thanh thước đo màu cho biểu đồ nhiệt hoặc đồ thị 3D.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:015",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "`plot_trisurf()` dùng để vẽ mặt cong 3D dựa trên lưới các tam giác.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:016",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Đồ thị tọa độ cực được tạo bằng `projection='polar'`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:017",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Để vẽ đường thẳng nối các điểm $(x, y)$, hàm chuẩn là `plt.plot(x, y)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:018",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Cú pháp cơ bản truyền dữ liệu trục X và Y là `plt.plot(x_values, y_values)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:019",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Đổi màu đường vẽ bằng tham số `color` (ví dụ: `color='blue'`).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:020",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Lệnh `plt.subplot(2, 1, 1)` tạo lưới 2 hàng, 1 cột và truy cập vào ô thứ 1.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:021",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 21,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "`fig.add_subplot(231)` tạo lưới 2 hàng, 3 cột và chọn vùng số 1.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:022",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 22,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Vẽ biểu đồ cột nằm ngang bằng `plt.barh(x, y)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:023",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 23,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Cú pháp ngắn gọn định dạng đường màu đỏ, liền nét, hình vuông tại điểm mút: `ax.plot(x, y, 'r-', marker='s')`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:matplotlib:multiple_choice:024",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 24,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Thiết lập đồng thời các thuộc tính nhãn và tiêu đề trên `Axes` bằng phương thức `ax.set(xlabel='...', ylabel='...', title='...')`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:001",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 1,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Cú pháp chuẩn để tạo Series từ danh sách `mylist` là `pd.Series(mylist)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:002",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 2,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Lấy nhãn/giá trị đầu tiên của Series bằng chỉ số số nguyên `myseries[0]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:003",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 3,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Tạo Series có đặt tên nhãn bằng tham số `index`: `pd.Series(mylist, index=[\"x\", \"y\", \"z\"])`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:004",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 4,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Để tạo DataFrame 2 chiều từ Dictionary, dùng `pd.DataFrame(data)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:005",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 5,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Sử dụng thuộc tính `.loc[0]` để trả về hàng đầu tiên dưới dạng Series.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:006",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 6,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Trả về nhiều hàng dạng DataFrame dùng danh sách các chỉ số: `df.loc[[0, 1]]`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:007",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 7,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Để tải tệp CSV vào DataFrame, dùng hàm `pd.read_csv('filename.csv')`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:008",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 8,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Trả về 20 hàng đầu tiên bằng `df.head(20)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:009",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 9,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Để in toàn bộ DataFrame mà không bị cắt bớt bằng dấu `...`, dùng `df.to_string()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:010",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 10,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Đọc tệp dữ liệu định dạng JSON bằng `pd.read_json()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:011",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 11,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Chuyển đổi dữ liệu Dictionary chứa cấu trúc bảng thành DataFrame dùng `pd.DataFrame(data)`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:012",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 12,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Nhận định đúng về DataFrame: Là bảng dữ liệu 2 chiều với các hàng và cột.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:013",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 13,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phương thức `df.head()` mặc định trả về **5** hàng đầu tiên nếu không truyền tham số.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:014",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 14,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Xem các hàng cuối cùng của DataFrame bằng phương thức `df.tail()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:015",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 15,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Để loại bỏ tất cả các hàng có chứa giá trị trống (NULL/NaN), dùng `df.dropna()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:016",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 16,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Tính giá trị trung vị (giá trị ở chính giữa sau khi xếp thứ tự) bằng `df['Column'].median()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:017",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 17,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Đúng - `fillna()` cho phép thay thế các ô trống bằng một giá trị cụ thể.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:018",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 18,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Phương thức điền giá trị thay thế ô trống là `df.fillna()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:019",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 19,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Để thay đổi trực tiếp trên DataFrame hiện tại mà không cần gán lại, dùng đối số `inplace = True`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:020",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 20,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Giá trị xuất hiện nhiều nhất trong cột (Yếu tố/Thứ số) gọi là **Mode** (`df['Column'].mode()[0]`).",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:021",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 21,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Giá trị trung bình cộng được tính bằng `df['Column'].mean()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:022",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 22,
+      "kind": "multiple_choice",
+      "answerRaw": "D",
+      "answerChoices": [
+        "D"
+      ],
+      "explanation": "Loại bỏ các hàng bị trùng lặp hoàn toàn dùng `df.drop_duplicates()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:023",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 23,
+      "kind": "multiple_choice",
+      "answerRaw": "A",
+      "answerChoices": [
+        "A"
+      ],
+      "explanation": "Phương thức `df.duplicated()` trả về các giá trị kiểu Booleans (`True`/`False`) cho biết hàng nào bị lặp lại.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:024",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 24,
+      "kind": "multiple_choice",
+      "answerRaw": "C",
+      "answerChoices": [
+        "C"
+      ],
+      "explanation": "Mối quan hệ/độ tương quan giữa các cột số được tính bằng phương thức `df.corr()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    },
+    {
+      "id": "python_advanced_notes:pandas:multiple_choice:025",
+      "sourceId": "python_advanced_notes",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "sourceSection": "multiple_choice",
+      "sourceQuestionNumber": 25,
+      "kind": "multiple_choice",
+      "answerRaw": "B",
+      "answerChoices": [
+        "B"
+      ],
+      "explanation": "Vẽ biểu đồ trực tiếp từ DataFrame trong Pandas dùng `df.plot()`.",
+      "status": "needs_source_alignment",
+      "flags": [],
+      "linkedQuestionId": null
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "description": "Lớp ghi chú đáp án, chưa liên kết an toàn với câu hỏi thực tế",
+  "sourceFiles": [
+    {
+      "id": "python_basic_notes",
+      "filename": "t_ng_h_p_p_n_ghi_ch_thi_python.md"
+    },
+    {
+      "id": "python_advanced_notes",
+      "filename": "t_ng_h_p_p_n_ghi_ch_6_file_python_n_ng_cao.md"
+    }
+  ],
+  "targetCatalog": "DevKunn Learn V2.9.6 src/data/hwCatalog.json",
+  "notesCount": 337,
+  "linkedNotesCount": 0,
+  "status": "requires_pdf_and_question_alignment",
+  "documents": [
+    {
+      "topic": "Hàm",
+      "topicKey": "functions",
+      "suggestedDocumentId": "slide-15",
+      "catalogQuestionCount": 65,
+      "extractedNotes": 50,
+      "needsManualReview": 13,
+      "missingExplanations": 6,
+      "sourceSections": {
+        "fill": 6,
+        "missing": 1,
+        "multiple_choice": 43
+      }
+    },
+    {
+      "topic": "Tuple, Set, Dictionary",
+      "topicKey": "tuple_set_dictionary",
+      "suggestedDocumentId": "slide-13",
+      "catalogQuestionCount": 57,
+      "extractedNotes": 32,
+      "needsManualReview": 1,
+      "missingExplanations": 1,
+      "sourceSections": {
+        "dictionary": 10,
+        "set": 10,
+        "tuple": 12
+      }
+    },
+    {
+      "topic": "Danh sách - List",
+      "topicKey": "list",
+      "suggestedDocumentId": "slide-11",
+      "catalogQuestionCount": 60,
+      "extractedNotes": 42,
+      "needsManualReview": 9,
+      "missingExplanations": 8,
+      "sourceSections": {
+        "fill": 8,
+        "multiple_choice": 34
+      }
+    },
+    {
+      "topic": "Cấu trúc lặp",
+      "topicKey": "loops",
+      "suggestedDocumentId": "slide-09",
+      "catalogQuestionCount": 46,
+      "extractedNotes": 20,
+      "needsManualReview": 8,
+      "missingExplanations": 8,
+      "sourceSections": {
+        "fill": 8,
+        "multiple_choice": 12
+      }
+    },
+    {
+      "topic": "Cấu trúc rẽ nhánh",
+      "topicKey": "conditions",
+      "suggestedDocumentId": "slide-07",
+      "catalogQuestionCount": 35,
+      "extractedNotes": 20,
+      "needsManualReview": 7,
+      "missingExplanations": 7,
+      "sourceSections": {
+        "fill": 7,
+        "multiple_choice": 13
+      }
+    },
+    {
+      "topic": "Khái niệm cơ bản",
+      "topicKey": "basics",
+      "suggestedDocumentId": "slide-05",
+      "catalogQuestionCount": 45,
+      "extractedNotes": 30,
+      "needsManualReview": 1,
+      "missingExplanations": 0,
+      "sourceSections": {
+        "multiple_choice": 30
+      }
+    },
+    {
+      "topic": "Pandas",
+      "topicKey": "pandas",
+      "suggestedDocumentId": "slide-27",
+      "catalogQuestionCount": 30,
+      "extractedNotes": 25,
+      "needsManualReview": 0,
+      "missingExplanations": 0,
+      "sourceSections": {
+        "multiple_choice": 25
+      }
+    },
+    {
+      "topic": "Matplotlib",
+      "topicKey": "matplotlib",
+      "suggestedDocumentId": "slide-25",
+      "catalogQuestionCount": 29,
+      "extractedNotes": 24,
+      "needsManualReview": 0,
+      "missingExplanations": 0,
+      "sourceSections": {
+        "multiple_choice": 24
+      }
+    },
+    {
+      "topic": "NumPy",
+      "topicKey": "numpy",
+      "suggestedDocumentId": "slide-23",
+      "catalogQuestionCount": 56,
+      "extractedNotes": 44,
+      "needsManualReview": 1,
+      "missingExplanations": 44,
+      "sourceSections": {
+        "multiple_choice": 44
+      }
+    },
+    {
+      "topic": "Class & OOP",
+      "topicKey": "oop",
+      "suggestedDocumentId": "slide-21",
+      "catalogQuestionCount": 17,
+      "extractedNotes": 10,
+      "needsManualReview": 1,
+      "missingExplanations": 2,
+      "sourceSections": {
+        "multiple_choice": 10
+      }
+    },
+    {
+      "topic": "Modules",
+      "topicKey": "modules",
+      "suggestedDocumentId": "slide-19",
+      "catalogQuestionCount": 12,
+      "extractedNotes": 10,
+      "needsManualReview": 0,
+      "missingExplanations": 0,
+      "sourceSections": {
+        "multiple_choice": 10
+      }
+    },
+    {
+      "topic": "Xử lý chuỗi",
+      "topicKey": "strings",
+      "suggestedDocumentId": "slide-17",
+      "catalogQuestionCount": 65,
+      "extractedNotes": 30,
+      "needsManualReview": 1,
+      "missingExplanations": 0,
+      "sourceSections": {
+        "multiple_choice": 30
+      }
+    }
+  ],
+  "constraints": [
+    "Không ghép theo số câu giữa tài liệu đáp án và HW catalog khi chưa xác minh",
+    "Không ghi đè trường answer hay reviewStatus trong dữ liệu ứng dụng",
+    "Câu trùng số phải phân biệt section (tuple/set/dictionary)",
+    "Không coi giải thích trong file ghi chú là đáp án đã xác minh"
+  ]
+}
