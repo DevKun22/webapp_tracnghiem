@@ -20,3 +20,6 @@ HW_AUDIT_STATUS.md
 # Supabase local runtime state (SQL migrations remain tracked)
 supabase/.temp/
 supabase/.branches/
+
+# Offline review reports (do not deploy)
+reports/

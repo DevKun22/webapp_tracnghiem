@@ -1,10 +1,10 @@
-import {useEffect,useMemo,useState} from 'react';
-import {Check,ChevronDown,ChevronUp,Copy,Flag,Send,Sparkles,Users,Zap,BookOpen} from 'lucide-react';
+import {useEffect,useMemo,useState,type Ref} from 'react';
+import {Check,ChevronDown,Flag,Send,Sparkles,Users,Zap,BookOpen} from 'lucide-react';
 import {supabase} from '../../lib/supabase';
 import {makeAiPrompt,type AiPromptMode,type Choice} from './aiPrompt';
 
 type Summary={option_id:string;votes:number;total:number;percentage:number;status:string};
-type Props={questionId:string;body:string;options:Choice[];selected:string|null;flags?:string[]};
+type Props={questionId:string;body:string;options:Choice[];selected:string|null;flags?:string[];mode?:'tools'|'contribution';reviewStatus?:string;verifiedAnswer?:string|null;explanation?:string;submitRef?:Ref<HTMLButtonElement>};
 type ReportType='ambiguous'|'multiple_answers'|'missing_information';
 function contentHash(body:string,options:Choice[]):string{
   // Hash để phân biệt phiên bản nội dung, không dùng làm mã bảo mật.
@@ -12,23 +12,23 @@ function contentHash(body:string,options:Choice[]):string{
   for(let i=0;i<text.length;i++)h=Math.imul(h^text.charCodeAt(i),16777619);
   return(h>>>0).toString(16).padStart(8,'0');
 }
-export function CommunityAnswer({questionId,body,options,selected,flags=[]}:Props){
-  const [expanded,setExpanded]=useState(false);
+export function CommunityAnswer({questionId,body,options,selected,flags=[],mode='contribution',reviewStatus,verifiedAnswer,explanation,submitRef}:Props){
+  const [activeTool,setActiveTool]=useState<'ai'|'report'|'stats'|null>(null);
   const [copied,setCopied]=useState<AiPromptMode|null>(null);
   const [busy,setBusy]=useState(false);
   const [status,setStatus]=useState('');
   const [statusKind,setStatusKind]=useState<'success'|'error'|'info'>('info');
   const [rows,setRows]=useState<Summary[]>([]);
-  const [showReport,setShowReport]=useState(false);
+  const [lastSent,setLastSent]=useState<string|null>(null);
   const [report,setReport]=useState<ReportType>('ambiguous');
   const hash=useMemo(()=>contentHash(body,options),[body,options]);
-  useEffect(()=>{setExpanded(false);setCopied(null);setStatus('');setRows([]);setShowReport(false);},[questionId]);
+  useEffect(()=>{setActiveTool(null);setCopied(null);setStatus('');setRows([]);setLastSent(null);},[questionId]);
   async function refresh(){
     const client=supabase;if(!client)return;
     const {data,error}=await client.rpc('get_hw_answer_consensus',{p_question_id:questionId});
     if(!error&&Array.isArray(data))setRows(data as Summary[]);
   }
-  useEffect(()=>{void refresh();},[questionId]);
+  useEffect(()=>{if(mode==='tools')void refresh();},[questionId,mode]);
   const copy=async(mode:AiPromptMode)=>{
     try{
       await navigator.clipboard.writeText(makeAiPrompt({questionId,body,options},mode));
@@ -45,7 +45,7 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[]}:Prop
       if(authError||!user)throw new Error('Bạn cần đăng nhập để gửi đóng góp.');
       const {error}=await client.from('hw_answer_submissions').upsert({user_id:user.id,question_id:questionId,option_id:selected,question_hash:hash,source:'learner_selected',updated_at:new Date().toISOString()},{onConflict:'user_id,question_id'});
       if(error)throw error;
-      setStatusKind('success');setStatus(`Đã gửi phiếu ${selected} lên Supabase. Nếu chọn và gửi lại, phiếu cũ sẽ được thay thế.`);
+      setLastSent(selected);setStatusKind('success');setStatus(`Đã gửi phiếu ${selected}. Bạn có thể đổi lựa chọn và gửi lại.`);
       await refresh();
     }catch(error){setStatusKind('error');setStatus('Không gửi được: '+(error instanceof Error?error.message:'Lỗi kết nối'));}
     finally{setBusy(false);}
@@ -58,35 +58,38 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[]}:Prop
       if(authError||!user)throw new Error('Bạn cần đăng nhập.');
       const {error}=await client.from('hw_question_reports').upsert({user_id:user.id,question_id:questionId,question_hash:hash,report_type:report,updated_at:new Date().toISOString()},{onConflict:'user_id,question_id'});
       if(error)throw error;
-      setStatusKind('success');setStatus('Đã ghi nhận báo cáo vấn đề. Báo cáo này không tính vào phiếu đáp án.');setShowReport(false);
+      setStatusKind('success');setStatus('Đã ghi nhận báo cáo vấn đề. Báo cáo này không tính vào phiếu đáp án.');setActiveTool(null);
     }catch(error){setStatusKind('error');setStatus('Không gửi được báo cáo: '+(error instanceof Error?error.message:'Lỗi kết nối'));}
     finally{setBusy(false);}
   };
-  return <section className="hw-community">
-    <button className="hw-community-trigger" type="button" onClick={()=>setExpanded(v=>!v)} aria-expanded={expanded}>
-      <Sparkles size={17}/><span>Hỏi AI <b>·</b> Đóng góp</span>{expanded?<ChevronUp size={16}/>:<ChevronDown size={16}/>}
-    </button>
-    {expanded&&<div className="hw-community-content">
-      <div className="hw-community-section-label">1 · HỎI AI BÊN NGOÀI</div>
-      <div className="hw-community-copy-grid">
-        <button className={`hw-ai-copy quick ${copied==='quick'?'copied':''}`} onClick={()=>void copy('quick')} type="button">
-          {copied==='quick'?<Check size={17}/>:<Zap size={17}/>}<span>{copied==='quick'?'Đã sao chép':'Đáp án nhanh'}</span>
-        </button>
-        <button className={`hw-ai-copy detailed ${copied==='detailed'?'copied':''}`} onClick={()=>void copy('detailed')} type="button">
-          {copied==='detailed'?<Check size={17}/>:<BookOpen size={17}/>}<span>{copied==='detailed'?'Đã sao chép':'Giải chi tiết'}</span>
-        </button>
+  if(mode==='contribution')return <section className="hw-community hw-community-contribution" aria-label="Phản hồi và đóng góp đáp án">
+    <div className="hw-community-quick">
+      <div className="hw-community-quick-selection" aria-live="polite">
+        <span>{selected?<>Đã chọn <strong>{selected}</strong></>:'Chưa chọn đáp án'}</span>
+        {reviewStatus==='verified'&&verifiedAnswer?<span className="hw-answer-trust verified">{selected===verifiedAnswer?'Chính xác':`Đáp án xác minh: ${verifiedAnswer}`}</span>:reviewStatus==='ambiguous'?<span className="hw-answer-trust ambiguous">Đề cần xem lại</span>:<span className="hw-answer-trust">Chưa có đáp án xác minh</span>}
+        {lastSent===selected&&selected&&<span className="hw-answer-trust sent"><Check size={13}/> Đã gửi đóng góp</span>}
       </div>
-      <div className="hw-community-hint"><Copy size={13}/> Prompt đã gồm nguyên câu hỏi và các phương án; không cần dán kết quả AI vào đây.</div>
-      <div className="hw-community-section-label">2 · ĐÓNG GÓP ĐÁP ÁN</div>
-      <div className="hw-community-choice-row">
-        <span>{selected?<>Bạn đang chọn <strong className="hw-selected-letter">{selected}</strong></>: 'Chọn đáp án A/B/C/D ngay trên câu hỏi.'}</span>
-        <button type="button" className="hw-community-send" disabled={!selected||!options.some(o=>o.id===selected)||busy} onClick={()=>void submit()}><Send size={15}/>{busy?'Đang gửi':'Gửi đóng góp'}</button>
-      </div>
-      <button type="button" className="hw-report-toggle" onClick={()=>setShowReport(v=>!v)}><Flag size={15}/> {showReport?'Đóng báo cáo':'Đề mơ hồ / thiếu dữ kiện? Báo lỗi'} <ChevronDown size={14}/></button>
-      {showReport&&<div className="hw-report-panel"><label htmlFor={`hw-report-${questionId}`}>Chọn loại vấn đề (không bắt buộc mô tả)</label><select id={`hw-report-${questionId}`} value={report} onChange={e=>setReport(e.target.value as ReportType)}><option value="ambiguous">Đề có nhiều cách hiểu</option><option value="multiple_answers">Có nhiều đáp án đúng</option><option value="missing_information">Thiếu code / dữ kiện / phương án</option></select><button type="button" className="btn btn-outline" disabled={busy} onClick={()=>void submitReport()}>Gửi báo cáo</button></div>}
-      {status&&<p className={`hw-community-status ${statusKind}`} role="status">{statusKind==='success'&&<Check size={15}/>} {status}</p>}
-      {rows.length>0&&<details className="hw-community-stats"><summary><Users size={14}/> Tham khảo đồng thuận cộng đồng</summary><div className="hw-community-votes">{rows.map(r=><div key={r.option_id}><span>{r.option_id}</span><div className="hw-vote-track"><div style={{width:`${Math.max(0,Math.min(100,Number(r.percentage)||0))}%`}}/></div><small>{r.votes} · {r.percentage}%</small></div>)}</div><small>Phiếu cộng đồng không phải đáp án được kiểm chứng.</small></details>}
-      {flags.length>0&&<p className="hw-alert">Câu có cảnh báo dữ liệu gốc. Không tự dùng đồng thuận để xác nhận chuyên môn.</p>}
+      <button ref={submitRef} type="button" className="hw-community-send" disabled={!selected||!options.some(o=>o.id===selected)||busy} onClick={()=>void submit()}><Send size={15}/>{busy?'Đang gửi':lastSent===selected?'Gửi lại đóng góp':'Đóng góp đáp án'}</button>
+    </div>
+    {(reviewStatus==='verified'||reviewStatus==='ambiguous')&&explanation&&<details className="hw-inline-explanation"><summary>Xem giải thích</summary><p>{explanation}</p></details>}
+    {status&&<p className={`hw-community-status ${statusKind}`} role="status">{statusKind==='success'&&<Check size={15}/>} {status}</p>}
+  </section>;
+  return <section className="hw-community hw-community-tools" aria-label="Hỏi AI và báo lỗi câu hỏi">
+    <div className="hw-tool-buttons">
+      <button type="button" className="hw-tool-ai" aria-expanded={activeTool==='ai'} onClick={()=>setActiveTool(v=>v==='ai'?null:'ai')}><Sparkles size={16}/> Hỏi AI <ChevronDown size={14}/></button>
+      <button type="button" className="hw-tool-report" aria-expanded={activeTool==='report'} onClick={()=>setActiveTool(v=>v==='report'?null:'report')}><Flag size={16}/> Báo lỗi đề</button>
+      <button type="button" className="hw-tool-stats" aria-expanded={activeTool==='stats'} onClick={()=>setActiveTool(v=>v==='stats'?null:'stats')}><Users size={16}/> Thống kê</button>
+    </div>
+    {activeTool&&<div className="hw-tool-flyout" role="region" aria-label={activeTool==='ai'?'Sao chép prompt hỏi AI':activeTool==='report'?'Báo cáo đề có vấn đề':'Thống kê cộng đồng'}>
+      <button type="button" className="hw-tool-dismiss" onClick={()=>setActiveTool(null)} aria-label="Đóng bảng công cụ">×</button>
+      {activeTool==='ai'&&<><strong>Hỏi AI bên ngoài</strong><div className="hw-community-copy-grid">
+        <button className={`hw-ai-copy quick ${copied==='quick'?'copied':''}`} onClick={()=>void copy('quick')} type="button">{copied==='quick'?<Check size={17}/>:<Zap size={17}/>} {copied==='quick'?'Đã sao chép':'Đáp án nhanh'}</button>
+        <button className={`hw-ai-copy detailed ${copied==='detailed'?'copied':''}`} onClick={()=>void copy('detailed')} type="button">{copied==='detailed'?<Check size={17}/>:<BookOpen size={17}/>} {copied==='detailed'?'Đã sao chép':'Giải chi tiết'}</button>
+      </div><small>Prompt bao gồm nguyên câu hỏi và các lựa chọn.</small></>}
+      {activeTool==='report'&&<><strong>Báo câu hỏi có vấn đề</strong><div className="hw-report-panel"><label htmlFor={`hw-report-${questionId}`}>Chọn loại vấn đề</label><select id={`hw-report-${questionId}`} value={report} onChange={e=>setReport(e.target.value as ReportType)}><option value="ambiguous">Đề có nhiều cách hiểu</option><option value="multiple_answers">Có nhiều đáp án đúng</option><option value="missing_information">Thiếu code / dữ kiện / phương án</option></select><button type="button" className="btn btn-outline" disabled={busy} onClick={()=>void submitReport()}>Gửi báo cáo</button></div></>}
+      {activeTool==='stats'&&<><strong>Đồng thuận cộng đồng</strong>{rows.length?<div className="hw-community-votes">{rows.map(r=><div key={r.option_id}><span>{r.option_id}</span><div className="hw-vote-track"><div style={{width:`${Math.max(0,Math.min(100,Number(r.percentage)||0))}%`}}/></div><small>{r.votes} · {r.percentage}%</small></div>)}</div>:<small>Chưa có thống kê để hiển thị.</small>}<small>Phiếu cộng đồng không phải đáp án đã kiểm chứng.</small></>}
+      {flags.length>0&&<p className="hw-alert">Câu có cảnh báo dữ liệu gốc; cần đối chiếu PDF.</p>}
     </div>}
+    {status&&<p className={`hw-community-status ${statusKind}`} role="status">{statusKind==='success'&&<Check size={15}/>} {status}</p>}
   </section>;
 }

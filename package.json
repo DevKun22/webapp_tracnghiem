@@ -1,7 +1,7 @@
 {
   "name": "devkunn-learn",
   "private": true,
-  "version": "2.9.1",
+  "version": "2.9.6",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -9,14 +9,16 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "vitest run",
     "check:env": "node --env-file-if-exists=.env.local scripts/check-env.mjs",
-    "audit:content": "python scripts/audit_content.py"
+    "audit:content": "python scripts/audit_content.py",
+    "check:practice-ui": "node scripts/check-practice-ui.mjs && node scripts/check-v293-ux.mjs && node scripts/check-v294-ux.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.0",
     "lucide-react": "^0.468.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "zod": "^3.25.76"
+    "zod": "^3.25.76",
+    "sonner": "^2.0.8"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
