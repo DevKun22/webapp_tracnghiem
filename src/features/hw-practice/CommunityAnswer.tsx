@@ -66,12 +66,12 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[],mode=
     <div className="hw-community-quick">
       <div className="hw-community-quick-selection" aria-live="polite">
         <span>{selected?<>Đã chọn <strong>{selected}</strong></>:'Chưa chọn đáp án'}</span>
-        {reviewStatus==='verified'&&verifiedAnswer?<span className="hw-answer-trust verified">{selected===verifiedAnswer?'Chính xác':`Đáp án xác minh: ${verifiedAnswer}`}</span>:reviewStatus==='ambiguous'?<span className="hw-answer-trust ambiguous">Đề cần xem lại</span>:<span className="hw-answer-trust">Chưa có đáp án xác minh</span>}
+        {selected&&reviewStatus==='verified'&&verifiedAnswer?<span className="hw-answer-trust verified">{selected===verifiedAnswer?'Chính xác':`Đáp án xác minh: ${verifiedAnswer}`}</span>:reviewStatus==='ambiguous'?<span className="hw-answer-trust ambiguous">Đề cần xem lại</span>:<span className="hw-answer-trust">Chưa có đáp án xác minh</span>}
         {lastSent===selected&&selected&&<span className="hw-answer-trust sent"><Check size={13}/> Đã gửi đóng góp</span>}
       </div>
       <button ref={submitRef} type="button" className="hw-community-send" disabled={!selected||!options.some(o=>o.id===selected)||busy} onClick={()=>void submit()}><Send size={15}/>{busy?'Đang gửi':lastSent===selected?'Gửi lại đóng góp':'Đóng góp đáp án'}</button>
     </div>
-    {(reviewStatus==='verified'||reviewStatus==='ambiguous')&&explanation&&<details className="hw-inline-explanation"><summary>Xem giải thích</summary><p>{explanation}</p></details>}
+    {selected&&(reviewStatus==='verified'||reviewStatus==='ambiguous')&&explanation&&<details className="hw-inline-explanation"><summary>Xem giải thích</summary><p>{explanation}</p></details>}
     {status&&<p className={`hw-community-status ${statusKind}`} role="status">{statusKind==='success'&&<Check size={15}/>} {status}</p>}
   </section>;
   return <section className="hw-community hw-community-tools" aria-label="Hỏi AI và báo lỗi câu hỏi">

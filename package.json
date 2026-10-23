@@ -1,7 +1,7 @@
 {
   "name": "devkunn-learn",
   "private": true,
-  "version": "2.9.7",
+  "version": "2.9.8",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.57.0",
     "lucide-react": "^0.468.0",
+    "pdfjs-dist": "^4.10.38",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "zod": "^3.25.76",
