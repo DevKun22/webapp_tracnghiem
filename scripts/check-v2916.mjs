@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 const read=p=>readFileSync(p,'utf8');
 assert.equal(JSON.parse(read('package.json')).version,'2.9.16');
-for(const p of ['supabase/14_v2916_ai_quota_management.sql','api/admin/ai-quotas.ts','api/admin/ai-users.ts','api/ai/quota.ts','server/ai-quota.ts','src/features/admin/AIQuotaManagement.tsx','src/features/hw-practice/components/AIQuotaBar.tsx','src/features/hw-practice/aiAnswerFormat.ts']) assert.ok(existsSync(p),p);
+for(const p of ['supabase/14_v2916_ai_quota_management.sql','server/admin-handlers/ai-quotas.ts','server/admin-handlers/ai-users.ts','api/ai/quota.ts','server/ai-quota.ts','src/features/admin/AIQuotaManagement.tsx','src/features/hw-practice/components/AIQuotaBar.tsx','src/features/hw-practice/aiAnswerFormat.ts']) assert.ok(existsSync(p),p);
 const sql=read('supabase/14_v2916_ai_quota_management.sql');
 for(const marker of ['pg_advisory_xact_lock','auth.role()',"Asia/Ho_Chi_Minh",'ai_user_quota_overrides','ai_quota_snapshot_v2916','reserve_ai_request_v2916'])assert.ok(sql.includes(marker),marker);
 const tutor=read('api/ai/tutor.ts');assert.match(tutor,/reserve_ai_request_v2916/);assert.match(tutor,/questions\.get\(qid\)/);assert.ok(!/data\.prompt|body\.prompt/.test(tutor));

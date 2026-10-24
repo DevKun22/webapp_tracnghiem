@@ -1,5 +1,5 @@
-import { authorize, json, checkPostOrigin, cookieToken, auditAdmin, type Request, type Response, service } from '../../server/admin-shared.js';
-import { getConfigs, isProvider, safeConfig, saveConfig, checkProvider } from '../../server/ai-providers.js';
+import { authorize, json, checkPostOrigin, cookieToken, auditAdmin, type Request, type Response, service } from '../admin-shared.js';
+import { getConfigs, isProvider, safeConfig, saveConfig, checkProvider } from '../ai-providers.js';
 export default async function handler(req:Request,res:Response){
  if(!['GET','POST'].includes(req.method||''))return json(res,405,{message:'Phương thức không được hỗ trợ.'});
  if(req.method==='POST'&&!checkPostOrigin(req,res))return;

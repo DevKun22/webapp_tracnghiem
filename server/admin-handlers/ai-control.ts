@@ -1,6 +1,6 @@
-import { authorize, auditAdmin, checkPostOrigin, cookieToken, json, service, type Request, type Response } from '../../server/admin-shared.js';
-import { readAIControl } from '../../server/ai-control.js';
-import { getConfigs } from '../../server/ai-providers.js';
+import { authorize, auditAdmin, checkPostOrigin, cookieToken, json, service, type Request, type Response } from '../admin-shared.js';
+import { readAIControl } from '../ai-control.js';
+import { getConfigs } from '../ai-providers.js';
 export default async function handler(req:Request,res:Response){
  if(req.method!=='GET'&&req.method!=='POST')return json(res,405,{message:'Phương thức không được hỗ trợ.'});
  if(req.method==='POST'&&!checkPostOrigin(req,res))return;

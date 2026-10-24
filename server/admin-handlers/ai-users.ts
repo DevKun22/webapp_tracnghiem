@@ -1,5 +1,5 @@
-import {authorize,auditAdmin,checkPostOrigin,cookieToken,json,service,type Request,type Response} from '../../server/admin-shared.js';
-import {getQuota} from '../../server/ai-quota.js';
+import {authorize,auditAdmin,checkPostOrigin,cookieToken,json,service,type Request,type Response} from '../admin-shared.js';
+import {getQuota} from '../ai-quota.js';
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const validPeriod=(x:unknown)=>['lifetime','daily','weekly','monthly'].includes(String(x));
 const validLimit=(x:unknown)=>x===null||(Number.isInteger(x)&&Number(x)>=0&&Number(x)<=10000);
