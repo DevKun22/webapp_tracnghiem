@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const read=name=>readFileSync(new URL('../'+name,import.meta.url),'utf8');
+const shared=read('server/admin-shared.ts');
+const bootstrap=read('api/admin/session.ts');
+const logout=read('api/admin/logout.ts');
+const dashboard=read('src/features/admin/AdminDashboard.tsx');
+assert.match(shared,/HttpOnly; Secure; SameSite=Strict/);
+assert.match(shared,/claims\.claims\.aal\s*!==\s*'aal2'/);
+assert.match(shared,/system_admin_roles/);
+assert.match(shared,/admin\.auth\.getUser\(token\)/);
+assert.match(shared,/checkPostOrigin/);
+assert.match(bootstrap,/Math\.min\(300,expiry\)/);
+assert.match(bootstrap,/authorizeToken\(token,res\)/);
+assert.match(logout,/clearAdminCookie/);
+assert.match(dashboard,/credentials:\s*'same-origin'/);
+assert.doesNotMatch(read('api/admin/ai-status.ts'),/req\.headers\.authorization/);
+console.log('Admin cookie source checks: PASS (not an integration/security audit)');

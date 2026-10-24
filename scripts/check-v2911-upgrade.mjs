@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const read = name => readFileSync(new URL('../'+name,import.meta.url),'utf8');
+const panel=read('src/features/hw-practice/HWAnswerPanel.tsx');
+const practice=read('src/features/hw-practice/HWPractice.tsx');
+const sheet=read('src/features/hw-practice/components/LearningInfoSheet.tsx');
+const styles=read('src/styles/index.css');
+const manifest=JSON.parse(read('package.json'));
+assert.ok(['2.9.11', '2.9.12', '2.9.13', '2.9.14', '2.9.15'].includes(manifest.version));
+assert(panel.includes("selected===o.id&&!verified&&onAskAi"),'Only selected, unverified answer shows inline AI');
+assert(panel.includes('dk-context-ai-action'),'In-flow contextual AI action');
+assert(practice.includes("question.reviewStatus==='verified'&&Boolean(question.answer)"),'Use canonical verification state');
+assert(practice.includes("setInfoInitialTab('ai')"),'Context button routes to existing AI sheet');
+assert(sheet.includes("initialTab='result'"),'Normal detail remains result first');
+assert(sheet.includes('setTab(initialTab)'),'AI sheet opens on requested tab');
+assert((sheet.includes('AI Trợ giảng · Chưa sẵn sàng') || sheet.includes('AI Trợ giảng · Gemini ưu tiên')) && sheet.includes('Mở AI bên ngoài'),'AI provider readiness and external fallback intact');
+assert(styles.includes('.dk-context-ai-action')&&!styles.includes('.dk-context-ai-action{position:fixed'),'Inline button not fixed-overlay');
+console.log('V2.9.11 static checks: PASS');

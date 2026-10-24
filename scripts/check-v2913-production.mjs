@@ -1,0 +1,13 @@
+import { readFileSync, existsSync } from 'node:fs';
+const read=(path)=>readFileSync(path,'utf8');
+const required=['src/features/admin/AdminDashboard.tsx','src/features/admin/FirebaseAiDiagnostic.tsx','src/styles/index.css','api/ai/tutor.ts','server/ai-providers.ts','supabase/10_v2913_ai_gateway.sql','docs/V2913_PRODUCTION_READINESS.md'];
+for(const file of required)if(!existsSync(file))throw Error('Missing '+file);
+const dashboard=read('src/features/admin/AdminDashboard.tsx');
+for(const phrase of ['Tổng quan','Firebase & Gemini','Nhà cung cấp AI','Triển khai production','MFA hoàn tất','dk-admin-metrics'])if(!dashboard.includes(phrase))throw Error('Missing dashboard section '+phrase);
+const check=read('src/features/admin/FirebaseAiDiagnostic.tsx');
+if(!check.includes("'gemini-3.5-flash-lite'"))throw Error('Wrong default Firebase model');
+if(!check.includes('getToken(appCheck, false)')||!check.includes('response.response.text()'))throw Error('Diagnostic bypassed');
+const tutor=read('api/ai/tutor.ts');
+if(!tutor.includes('reserve_ai_request')||!tutor.includes('!user.email_confirmed_at'))throw Error('AI quota guard incomplete');
+if(tutor.includes("import('firebase/ai')"))throw Error('Learner browser SDK must not bypass quota');
+console.log('PASS V2.9.13 production-prep static checks (NOT a deploy or security audit)');

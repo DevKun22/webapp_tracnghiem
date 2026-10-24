@@ -48,7 +48,7 @@ export function DocumentViewer({url,title,initialPage=1,onClose}:Props){
    setPdf(document);setPage(clamp(initialPage,document.numPages));setLoading(false);
   }).catch(reason=>{
    if(disposed)return;
-   console.error('Không tải được tài liệu PDF',reason);
+   (import.meta.env.DEV ? console.error : () => {}) ('Không tải được tài liệu PDF',reason);
    setError('Không mở được tài liệu trong ứng dụng. Bạn có thể thử mở bằng trình duyệt.');setLoading(false);
   });
   return()=>{disposed=true;void task.destroy()};
@@ -73,7 +73,7 @@ export function DocumentViewer({url,title,initialPage=1,onClose}:Props){
    return renderTask.promise;
   }).then(()=>{if(!disposed)setRendering(false)}).catch(reason=>{
    if(disposed||reason?.name==='RenderingCancelledException')return;
-   console.error('Không hiển thị được trang PDF',reason);
+   (import.meta.env.DEV ? console.error : () => {}) ('Không hiển thị được trang PDF',reason);
    setError('Không thể hiển thị trang PDF này. Vui lòng thử lại hoặc mở bằng trình duyệt.');setRendering(false);
   });
   return()=>{disposed=true;renderTask?.cancel()};

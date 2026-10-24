@@ -1,0 +1,18 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const read = p=>readFileSync(p,'utf8');
+const api=read('api/admin/ai-control.ts');
+const ui=read('src/features/admin/AIControlPanel.tsx');
+const db=read('server/ai-control.ts');
+const sql=read('supabase/13_v2915_ai_runtime_modes.sql');
+assert.match(api,/SPARK_FIREBASE_GUARD_UNAVAILABLE/);
+assert.match(api,/data\.ai_runtime_mode==='spark'&&data\.firebase_learner_enabled/);
+assert.match(api,/AI_FIREBASE_GUARD_DEPLOYED/);
+assert.match(api,/NO_VERIFIED_SERVER_PROVIDER/);
+assert.match(ui,/Spark — Học tập \/ Tiết kiệm/);
+assert.match(ui,/Blaze — Firebase-first có Guard/);
+assert.match(ui,/firebase_learner_enabled:false,tutor_enabled:false/);
+assert.match(ui,/disabled=\{draft\.ai_runtime_mode!=='blaze'\}/);
+assert.match(db,/ai_runtime_mode/);
+assert.match(sql,/check \(ai_runtime_mode in \('spark','blaze'\)\)/);
+console.log('PASS Spark/Blaze mode gates, migration and UI structure (static only)');

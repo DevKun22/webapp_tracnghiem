@@ -1,7 +1,7 @@
 {
   "name": "devkunn-learn",
   "private": true,
-  "version": "2.9.8",
+  "version": "2.9.16",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -10,9 +10,22 @@
     "test": "vitest run",
     "check:env": "node --env-file-if-exists=.env.local scripts/check-env.mjs",
     "audit:content": "python scripts/audit_content.py",
-    "check:practice-ui": "node scripts/check-practice-ui.mjs && node scripts/check-v293-ux.mjs && node scripts/check-v294-ux.mjs"
+    "check:practice-ui": "node scripts/check-practice-ui.mjs && node scripts/check-v293-ux.mjs && node scripts/check-v294-ux.mjs",
+    "check:v299": "node scripts/check-v299-upgrade.mjs",
+    "check:v2910": "node scripts/check-v2910-upgrade.mjs",
+    "check:v2911": "node scripts/check-v2911-upgrade.mjs",
+    "check:admin-session": "node scripts/check-admin-session.mjs",
+    "check:v2912": "node scripts/check-v2912-security.mjs",
+    "check:v2913": "node scripts/check-v2913.mjs",
+    "check:v2913-production": "node scripts/check-v2913-production.mjs",
+    "check:v2914": "node scripts/check-v2914.mjs",
+    "check:v2915": "node scripts/check-v2915.mjs",
+    "check:v2915-modes": "node scripts/check-v2915-modes.mjs",
+    "check:firebase-guard": "node --test firebase-guard/functions/test/guard.test.js",
+    "check:v2916": "node scripts/check-v2916.mjs"
   },
   "dependencies": {
+    "firebase": "^12.4.0",
     "@supabase/supabase-js": "^2.57.0",
     "lucide-react": "^0.468.0",
     "pdfjs-dist": "^4.10.38",

@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';import{readFileSync,existsSync}from'node:fs';
+const read=p=>readFileSync(p,'utf8');
+assert.ok(['2.9.15','2.9.16'].includes(JSON.parse(read('package.json')).version));
+for(const f of ['supabase/12_v2915_ai_control.sql','server/ai-control.ts','api/admin/ai-control.ts','src/features/admin/AIControlPanel.tsx'])assert.ok(existsSync(f),f);
+assert.match(read('api/ai/tutor.ts'),/await readAIControl\(\)/);assert.match(read('api/ai/tutor.ts'),/!control.tutor_enabled/);
+assert.match(read('api/ai/tutor.ts'),/c.enabled&&c.connected&&c.key/);
+assert.match(read('api/admin/ai-control.ts'),/authorize\(req,res\)/);
+assert.match(read('api/admin/ai-control.ts'),/NO_VERIFIED_SERVER_PROVIDER/);
+assert.match(read('server/ai-control.ts'),/DISABLED_CONTROL/);
+assert.match(read('src/features/admin/AdminDashboard.tsx'),/AIControlPanel/);
+console.log('PASS V2.9.15 safety & control static checks');

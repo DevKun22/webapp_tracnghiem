@@ -1,0 +1,11 @@
+import {readFileSync,existsSync} from 'node:fs';
+const read=p=>readFileSync(p,'utf8');
+const needed=['api/ai/tutor.ts','server/ai-providers.ts','supabase/11_v2914_ai_request_guard.sql','src/features/hw-practice/components/LearningInfoSheet.tsx','docs/V2914_RELEASE_NOTES.md'];
+for(const file of needed)if(!existsSync(file))throw Error('Missing '+file);
+const tutor=read('api/ai/tutor.ts');
+for(const marker of ['questionId','requestId','reserve_ai_request_v2916','getConfigs','checkProvider','questions.get(qid)'])if(!tutor.includes(marker))throw Error('Missing server constraint '+marker);
+if(tutor.includes('body.prompt')||tutor.includes('data.prompt'))throw Error('Client-controlled prompt accepted');
+const sheet=read('src/features/hw-practice/components/LearningInfoSheet.tsx');
+if(!sheet.includes('crypto.randomUUID()')||!sheet.includes('requestId:'))throw Error('Client request id absent');
+if(!read('supabase/11_v2914_ai_request_guard.sql').includes('pg_advisory_xact_lock'))throw Error('Missing atomic reservation lock');
+console.log('PASS V2.9.14 static source guards (not live integration tests)');

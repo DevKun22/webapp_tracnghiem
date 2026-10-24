@@ -1,0 +1,15 @@
+import {readFileSync,existsSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const src=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const hw=src('src/features/hw-practice/HWPractice.tsx');
+const panel=src('src/features/hw-practice/HWAnswerPanel.tsx');
+const css=src('src/styles/index.css');
+const api=src('server/admin-shared.ts');
+assert(hw.includes('dk-mobile-footer-tools'));
+assert(hw.includes('questionId={question.id}'));
+assert(panel.includes('total>=5'));
+assert(panel.includes("if(!selected)"));
+assert(css.includes('.hw-modern .hw-question-tools{display:none!important}'));
+assert(api.includes('getUser(token)')&&api.includes('system_admin_roles'));
+assert(existsSync(new URL('../supabase/08_v2910_admin_roles.sql',import.meta.url)));
+console.log('V2.9.10 static regression: PASS');

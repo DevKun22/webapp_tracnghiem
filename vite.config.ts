@@ -1,3 +1,3 @@
-import { defineConfig } from 'vite';
+import { defineConfig, configDefaults } from 'vitest/config';
 import react from '@vitejs/plugin-react';
-export default defineConfig({ plugins: [react()] });
+export default defineConfig({ plugins: [react()], test: { exclude: [...configDefaults.exclude, 'firebase-guard/functions/test/**'] } });

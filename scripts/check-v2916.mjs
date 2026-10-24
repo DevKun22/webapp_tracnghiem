@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+const read=p=>readFileSync(p,'utf8');
+assert.equal(JSON.parse(read('package.json')).version,'2.9.16');
+for(const p of ['supabase/14_v2916_ai_quota_management.sql','api/admin/ai-quotas.ts','api/admin/ai-users.ts','api/ai/quota.ts','server/ai-quota.ts','src/features/admin/AIQuotaManagement.tsx','src/features/hw-practice/components/AIQuotaBar.tsx','src/features/hw-practice/aiAnswerFormat.ts']) assert.ok(existsSync(p),p);
+const sql=read('supabase/14_v2916_ai_quota_management.sql');
+for(const marker of ['pg_advisory_xact_lock','auth.role()',"Asia/Ho_Chi_Minh",'ai_user_quota_overrides','ai_quota_snapshot_v2916','reserve_ai_request_v2916'])assert.ok(sql.includes(marker),marker);
+const tutor=read('api/ai/tutor.ts');assert.match(tutor,/reserve_ai_request_v2916/);assert.match(tutor,/questions\.get\(qid\)/);assert.ok(!/data\.prompt|body\.prompt/.test(tutor));
+assert.match(read('firebase-guard/functions/index.js'),/reserve_ai_request_v2916/);
+assert.match(read('src/features/admin/AdminDashboard.tsx'),/AIQuotaManagement/);
+assert.match(read('src/features/hw-practice/components/LearningInfoSheet.tsx'),/AIQuotaBar/);
+assert.match(read('vite.config.ts'),/firebase-guard\/functions\/test/);
+console.log('PASS V2.9.16 structure, policy controls and safeguards (static only)');

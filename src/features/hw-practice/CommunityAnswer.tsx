@@ -32,7 +32,7 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[],mode=
   const copy=async(mode:AiPromptMode)=>{
     try{
       await navigator.clipboard.writeText(makeAiPrompt({questionId,body,options},mode));
-      setCopied(mode);setStatusKind('success');setStatus('Đã sao chép. Dán vào AI để hỏi, rồi quay lại chọn đáp án ngay trên câu hỏi.');
+      setCopied(mode);setStatusKind('success');setStatus('Đã sao chép prompt. Mở AI bên ngoài để tiếp tục.');
     }catch{setStatusKind('error');setStatus('Không sao chép được. Hãy kiểm tra quyền clipboard hoặc sử dụng HTTPS.');}
   };
   const submit=async()=>{
@@ -47,7 +47,7 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[],mode=
       if(error)throw error;
       setLastSent(selected);onSubmissionState?.('sent');setStatusKind('success');setStatus(`Đã gửi phiếu ${selected}. Bạn có thể đổi lựa chọn và gửi lại.`);
       await refresh();
-    }catch(error){console.error('Không gửi được đóng góp HW',error);onSubmissionState?.('error');setStatusKind('error');setStatus('Không gửi được đóng góp. Vui lòng kiểm tra kết nối và thử lại.');}
+    }catch(error){(import.meta.env.DEV ? console.error : () => {}) ('Không gửi được đóng góp HW',error);onSubmissionState?.('error');setStatusKind('error');setStatus('Không gửi được đóng góp. Vui lòng kiểm tra kết nối và thử lại.');}
     finally{setBusy(false);}
   };
   const submitReport=async()=>{
@@ -59,7 +59,7 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[],mode=
       const {error}=await client.from('hw_question_reports').upsert({user_id:user.id,question_id:questionId,question_hash:hash,report_type:report,updated_at:new Date().toISOString()},{onConflict:'user_id,question_id'});
       if(error)throw error;
       setStatusKind('success');setStatus('Đã ghi nhận báo cáo vấn đề. Báo cáo này không tính vào phiếu đáp án.');setActiveTool(null);
-    }catch(error){console.error('Không gửi được báo cáo HW',error);setStatusKind('error');setStatus('Không gửi được báo cáo. Vui lòng thử lại sau.');}
+    }catch(error){(import.meta.env.DEV ? console.error : () => {}) ('Không gửi được báo cáo HW',error);setStatusKind('error');setStatus('Không gửi được báo cáo. Vui lòng thử lại sau.');}
     finally{setBusy(false);}
   };
   if(mode==='contribution')return <section className="hw-community hw-community-contribution" aria-label="Phản hồi và đóng góp đáp án">
@@ -84,8 +84,9 @@ export function CommunityAnswer({questionId,body,options,selected,flags=[],mode=
       <button type="button" className="hw-tool-dismiss" onClick={()=>setActiveTool(null)} aria-label="Đóng bảng công cụ">×</button>
       {activeTool==='ai'&&<><strong>Hỏi AI bên ngoài</strong><div className="hw-community-copy-grid">
         <button className={`hw-ai-copy quick ${copied==='quick'?'copied':''}`} onClick={()=>void copy('quick')} type="button">{copied==='quick'?<Check size={17}/>:<Zap size={17}/>} {copied==='quick'?'Đã sao chép':'Đáp án nhanh'}</button>
+        <button className={`hw-ai-copy short ${copied==='short'?'copied':''}`} onClick={()=>void copy('short')} type="button">{copied==='short'?<Check size={17}/>:<BookOpen size={17}/>} {copied==='short'?'Đã sao chép':'Giải ngắn'}</button>
         <button className={`hw-ai-copy detailed ${copied==='detailed'?'copied':''}`} onClick={()=>void copy('detailed')} type="button">{copied==='detailed'?<Check size={17}/>:<BookOpen size={17}/>} {copied==='detailed'?'Đã sao chép':'Giải chi tiết'}</button>
-      </div><small>Prompt bao gồm nguyên câu hỏi và các lựa chọn.</small></>}
+      </div><small>Prompt bao gồm câu hỏi và các lựa chọn. AI chỉ là gợi ý, không phải đáp án chuẩn.</small><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Mở AI bên ngoài ↗</a></>}
       {activeTool==='report'&&<><strong>Báo câu hỏi có vấn đề</strong><div className="hw-report-panel"><label htmlFor={`hw-report-${questionId}`}>Chọn loại vấn đề</label><select id={`hw-report-${questionId}`} value={report} onChange={e=>setReport(e.target.value as ReportType)}><option value="ambiguous">Đề có nhiều cách hiểu</option><option value="multiple_answers">Có nhiều đáp án đúng</option><option value="missing_information">Thiếu code / dữ kiện / phương án</option></select><button type="button" className="btn btn-outline" disabled={busy} onClick={()=>void submitReport()}>Gửi báo cáo</button></div></>}
       {activeTool==='stats'&&<><strong>Đồng thuận cộng đồng</strong>{rows.length?<div className="hw-community-votes">{rows.map(r=><div key={r.option_id}><span>{r.option_id}</span><div className="hw-vote-track"><div style={{width:`${Math.max(0,Math.min(100,Number(r.percentage)||0))}%`}}/></div><small>{r.votes} · {r.percentage}%</small></div>)}</div>:<small>Chưa có thống kê để hiển thị.</small>}<small>Phiếu cộng đồng không phải đáp án đã kiểm chứng.</small></>}
       {flags.length>0&&<p className="hw-alert">Câu có cảnh báo dữ liệu gốc; cần đối chiếu PDF.</p>}
