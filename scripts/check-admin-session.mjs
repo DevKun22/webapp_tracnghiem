@@ -14,5 +14,5 @@ assert.match(bootstrap,/Math\.min\(300,expiry\)/);
 assert.match(bootstrap,/authorizeToken\(token,res\)/);
 assert.match(logout,/clearAdminCookie/);
 assert.match(dashboard,/credentials:\s*'same-origin'/);
-assert.doesNotMatch(read('api/admin/ai-status.ts'),/req\.headers\.authorization/);
+assert.doesNotMatch(read('server/admin-handlers/ai-status.ts'),/req\.headers\.authorization/);
 console.log('Admin cookie source checks: PASS (not an integration/security audit)');

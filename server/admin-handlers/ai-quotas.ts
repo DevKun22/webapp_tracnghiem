@@ -1,4 +1,4 @@
-import {authorize,auditAdmin,checkPostOrigin,cookieToken,json,service,type Request,type Response} from '../../server/admin-shared.js';
+import {authorize,auditAdmin,checkPostOrigin,cookieToken,json,service,type Request,type Response} from '../admin-shared.js';
 const validPeriod=(x:unknown)=>['lifetime','daily','weekly','monthly'].includes(String(x));
 const validLimit=(x:unknown)=>Number.isInteger(x)&&Number(x)>=0&&Number(x)<=10000;
 export default async function handler(req:Request,res:Response){

@@ -1,7 +1,7 @@
 import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 const read = p=>readFileSync(p,'utf8');
-const api=read('api/admin/ai-control.ts');
+const api=read('server/admin-handlers/ai-control.ts');
 const ui=read('src/features/admin/AIControlPanel.tsx');
 const db=read('server/ai-control.ts');
 const sql=read('supabase/13_v2915_ai_runtime_modes.sql');

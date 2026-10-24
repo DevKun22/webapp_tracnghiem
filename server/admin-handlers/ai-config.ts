@@ -1,4 +1,4 @@
-import { authorize, checkPostOrigin, json, service, adminEncryptionKey, encryptSecret, loadAISettings, publicAISettings, checkAIConnection, cookieToken, auditAdmin, type Request, type Response } from '../../server/admin-shared.js';
+import { authorize, checkPostOrigin, json, service, adminEncryptionKey, encryptSecret, loadAISettings, publicAISettings, checkAIConnection, cookieToken, auditAdmin, type Request, type Response } from '../admin-shared.js';
 function bodyObject(body: unknown): Record<string, unknown> | null {
   if (!body || typeof body !== 'object' || Array.isArray(body)) return null;
   return body as Record<string, unknown>;
